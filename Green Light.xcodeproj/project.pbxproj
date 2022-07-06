@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		524F8FAB2876544400D8D70B /* Green_LightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F8FAA2876544400D8D70B /* Green_LightApp.swift */; };
+		524F8FAD2876544400D8D70B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F8FAC2876544400D8D70B /* ContentView.swift */; };
+		524F8FAF2876544500D8D70B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 524F8FAE2876544500D8D70B /* Assets.xcassets */; };
+		524F8FB22876544500D8D70B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 524F8FB12876544500D8D70B /* Preview Assets.xcassets */; };
+		524F8FBC2876544600D8D70B /* Green_LightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F8FBB2876544600D8D70B /* Green_LightTests.swift */; };
+		524F8FC62876544600D8D70B /* Green_LightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F8FC52876544600D8D70B /* Green_LightUITests.swift */; };
+		524F8FC82876544600D8D70B /* Green_LightUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F8FC72876544600D8D70B /* Green_LightUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		524F8FB82876544600D8D70B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 524F8F9F2876544400D8D70B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 524F8FA62876544400D8D70B;
+			remoteInfo = "Green Light";
+		};
+		524F8FC22876544600D8D70B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 524F8F9F2876544400D8D70B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 524F8FA62876544400D8D70B;
+			remoteInfo = "Green Light";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		524F8FA72876544400D8D70B /* Green Light.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Green Light.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		524F8FAA2876544400D8D70B /* Green_LightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Green_LightApp.swift; sourceTree = "<group>"; };
+		524F8FAC2876544400D8D70B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		524F8FAE2876544500D8D70B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		524F8FB12876544500D8D70B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		524F8FB72876544600D8D70B /* Green LightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Green LightTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		524F8FBB2876544600D8D70B /* Green_LightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Green_LightTests.swift; sourceTree = "<group>"; };
+		524F8FC12876544600D8D70B /* Green LightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Green LightUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		524F8FC52876544600D8D70B /* Green_LightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Green_LightUITests.swift; sourceTree = "<group>"; };
+		524F8FC72876544600D8D70B /* Green_LightUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Green_LightUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		524F8FA42876544400D8D70B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		524F8FB42876544600D8D70B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		524F8FBE2876544600D8D70B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		524F8F9E2876544400D8D70B = {
+			isa = PBXGroup;
+			children = (
+				524F8FA92876544400D8D70B /* Green Light */,
+				524F8FBA2876544600D8D70B /* Green LightTests */,
+				524F8FC42876544600D8D70B /* Green LightUITests */,
+				524F8FA82876544400D8D70B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		524F8FA82876544400D8D70B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				524F8FA72876544400D8D70B /* Green Light.app */,
+				524F8FB72876544600D8D70B /* Green LightTests.xctest */,
+				524F8FC12876544600D8D70B /* Green LightUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		524F8FA92876544400D8D70B /* Green Light */ = {
+			isa = PBXGroup;
+			children = (
+				524F8FAA2876544400D8D70B /* Green_LightApp.swift */,
+				524F8FAC2876544400D8D70B /* ContentView.swift */,
+				524F8FAE2876544500D8D70B /* Assets.xcassets */,
+				524F8FB02876544500D8D70B /* Preview Content */,
+			);
+			path = "Green Light";
+			sourceTree = "<group>";
+		};
+		524F8FB02876544500D8D70B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				524F8FB12876544500D8D70B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		524F8FBA2876544600D8D70B /* Green LightTests */ = {
+			isa = PBXGroup;
+			children = (
+				524F8FBB2876544600D8D70B /* Green_LightTests.swift */,
+			);
+			path = "Green LightTests";
+			sourceTree = "<group>";
+		};
+		524F8FC42876544600D8D70B /* Green LightUITests */ = {
+			isa = PBXGroup;
+			children = (
+				524F8FC52876544600D8D70B /* Green_LightUITests.swift */,
+				524F8FC72876544600D8D70B /* Green_LightUITestsLaunchTests.swift */,
+			);
+			path = "Green LightUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		524F8FA62876544400D8D70B /* Green Light */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 524F8FCB2876544600D8D70B /* Build configuration list for PBXNativeTarget "Green Light" */;
+			buildPhases = (
+				524F8FA32876544400D8D70B /* Sources */,
+				524F8FA42876544400D8D70B /* Frameworks */,
+				524F8FA52876544400D8D70B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Green Light";
+			productName = "Green Light";
+			productReference = 524F8FA72876544400D8D70B /* Green Light.app */;
+			productType = "com.apple.product-type.application";
+		};
+		524F8FB62876544600D8D70B /* Green LightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 524F8FCE2876544600D8D70B /* Build configuration list for PBXNativeTarget "Green LightTests" */;
+			buildPhases = (
+				524F8FB32876544600D8D70B /* Sources */,
+				524F8FB42876544600D8D70B /* Frameworks */,
+				524F8FB52876544600D8D70B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				524F8FB92876544600D8D70B /* PBXTargetDependency */,
+			);
+			name = "Green LightTests";
+			productName = "Green LightTests";
+			productReference = 524F8FB72876544600D8D70B /* Green LightTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		524F8FC02876544600D8D70B /* Green LightUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 524F8FD12876544600D8D70B /* Build configuration list for PBXNativeTarget "Green LightUITests" */;
+			buildPhases = (
+				524F8FBD2876544600D8D70B /* Sources */,
+				524F8FBE2876544600D8D70B /* Frameworks */,
+				524F8FBF2876544600D8D70B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				524F8FC32876544600D8D70B /* PBXTargetDependency */,
+			);
+			name = "Green LightUITests";
+			productName = "Green LightUITests";
+			productReference = 524F8FC12876544600D8D70B /* Green LightUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		524F8F9F2876544400D8D70B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					524F8FA62876544400D8D70B = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					524F8FB62876544600D8D70B = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 524F8FA62876544400D8D70B;
+					};
+					524F8FC02876544600D8D70B = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 524F8FA62876544400D8D70B;
+					};
+				};
+			};
+			buildConfigurationList = 524F8FA22876544400D8D70B /* Build configuration list for PBXProject "Green Light" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 524F8F9E2876544400D8D70B;
+			productRefGroup = 524F8FA82876544400D8D70B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				524F8FA62876544400D8D70B /* Green Light */,
+				524F8FB62876544600D8D70B /* Green LightTests */,
+				524F8FC02876544600D8D70B /* Green LightUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		524F8FA52876544400D8D70B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				524F8FB22876544500D8D70B /* Preview Assets.xcassets in Resources */,
+				524F8FAF2876544500D8D70B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		524F8FB52876544600D8D70B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		524F8FBF2876544600D8D70B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		524F8FA32876544400D8D70B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				524F8FAD2876544400D8D70B /* ContentView.swift in Sources */,
+				524F8FAB2876544400D8D70B /* Green_LightApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		524F8FB32876544600D8D70B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				524F8FBC2876544600D8D70B /* Green_LightTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		524F8FBD2876544600D8D70B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				524F8FC62876544600D8D70B /* Green_LightUITests.swift in Sources */,
+				524F8FC82876544600D8D70B /* Green_LightUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		524F8FB92876544600D8D70B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 524F8FA62876544400D8D70B /* Green Light */;
+			targetProxy = 524F8FB82876544600D8D70B /* PBXContainerItemProxy */;
+		};
+		524F8FC32876544600D8D70B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 524F8FA62876544400D8D70B /* Green Light */;
+			targetProxy = 524F8FC22876544600D8D70B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		524F8FC92876544600D8D70B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		524F8FCA2876544600D8D70B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		524F8FCC2876544600D8D70B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Green Light/Preview Content\"";
+				DEVELOPMENT_TEAM = 2YJSMKRB25;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.josephcestone.Green-Light";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		524F8FCD2876544600D8D70B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Green Light/Preview Content\"";
+				DEVELOPMENT_TEAM = 2YJSMKRB25;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.josephcestone.Green-Light";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		524F8FCF2876544600D8D70B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2YJSMKRB25;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.josephcestone.Green-LightTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Green Light.app/Green Light";
+			};
+			name = Debug;
+		};
+		524F8FD02876544600D8D70B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2YJSMKRB25;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.josephcestone.Green-LightTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Green Light.app/Green Light";
+			};
+			name = Release;
+		};
+		524F8FD22876544600D8D70B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2YJSMKRB25;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.josephcestone.Green-LightUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Green Light";
+			};
+			name = Debug;
+		};
+		524F8FD32876544600D8D70B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2YJSMKRB25;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.josephcestone.Green-LightUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Green Light";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		524F8FA22876544400D8D70B /* Build configuration list for PBXProject "Green Light" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				524F8FC92876544600D8D70B /* Debug */,
+				524F8FCA2876544600D8D70B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		524F8FCB2876544600D8D70B /* Build configuration list for PBXNativeTarget "Green Light" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				524F8FCC2876544600D8D70B /* Debug */,
+				524F8FCD2876544600D8D70B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		524F8FCE2876544600D8D70B /* Build configuration list for PBXNativeTarget "Green LightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				524F8FCF2876544600D8D70B /* Debug */,
+				524F8FD02876544600D8D70B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		524F8FD12876544600D8D70B /* Build configuration list for PBXNativeTarget "Green LightUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				524F8FD22876544600D8D70B /* Debug */,
+				524F8FD32876544600D8D70B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 524F8F9F2876544400D8D70B /* Project object */;
+}
