@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		523EFFD52877C2E5003D72B4 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523EFFD42877C2E5003D72B4 /* MapView.swift */; };
+		523EFFD728781187003D72B4 /* CLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523EFFD628781187003D72B4 /* CLExtension.swift */; };
 		524F8FAB2876544400D8D70B /* Green_LightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F8FAA2876544400D8D70B /* Green_LightApp.swift */; };
-		524F8FAD2876544400D8D70B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F8FAC2876544400D8D70B /* ContentView.swift */; };
+		524F8FAD2876544400D8D70B /* IntersectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F8FAC2876544400D8D70B /* IntersectionView.swift */; };
 		524F8FAF2876544500D8D70B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 524F8FAE2876544500D8D70B /* Assets.xcassets */; };
 		524F8FB22876544500D8D70B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 524F8FB12876544500D8D70B /* Preview Assets.xcassets */; };
 		524F8FBC2876544600D8D70B /* Green_LightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F8FBB2876544600D8D70B /* Green_LightTests.swift */; };
 		524F8FC62876544600D8D70B /* Green_LightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F8FC52876544600D8D70B /* Green_LightUITests.swift */; };
 		524F8FC82876544600D8D70B /* Green_LightUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F8FC72876544600D8D70B /* Green_LightUITestsLaunchTests.swift */; };
+		527384712880E4DB00029D8B /* Intersection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527384702880E4DB00029D8B /* Intersection.swift */; };
+		527384732881DFAF00029D8B /* ColorPolyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527384722881DFAF00029D8B /* ColorPolyline.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		523EFFD42877C2E5003D72B4 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		523EFFD628781187003D72B4 /* CLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLExtension.swift; sourceTree = "<group>"; };
 		524F8FA72876544400D8D70B /* Green Light.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Green Light.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		524F8FAA2876544400D8D70B /* Green_LightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Green_LightApp.swift; sourceTree = "<group>"; };
-		524F8FAC2876544400D8D70B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		524F8FAC2876544400D8D70B /* IntersectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntersectionView.swift; sourceTree = "<group>"; };
 		524F8FAE2876544500D8D70B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		524F8FB12876544500D8D70B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		524F8FB72876544600D8D70B /* Green LightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Green LightTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +50,8 @@
 		524F8FC12876544600D8D70B /* Green LightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Green LightUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		524F8FC52876544600D8D70B /* Green_LightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Green_LightUITests.swift; sourceTree = "<group>"; };
 		524F8FC72876544600D8D70B /* Green_LightUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Green_LightUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		527384702880E4DB00029D8B /* Intersection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intersection.swift; sourceTree = "<group>"; };
+		527384722881DFAF00029D8B /* ColorPolyline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPolyline.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +103,11 @@
 			isa = PBXGroup;
 			children = (
 				524F8FAA2876544400D8D70B /* Green_LightApp.swift */,
-				524F8FAC2876544400D8D70B /* ContentView.swift */,
+				524F8FAC2876544400D8D70B /* IntersectionView.swift */,
+				527384702880E4DB00029D8B /* Intersection.swift */,
+				523EFFD628781187003D72B4 /* CLExtension.swift */,
+				523EFFD42877C2E5003D72B4 /* MapView.swift */,
+				527384722881DFAF00029D8B /* ColorPolyline.swift */,
 				524F8FAE2876544500D8D70B /* Assets.xcassets */,
 				524F8FB02876544500D8D70B /* Preview Content */,
 			);
@@ -257,7 +269,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				524F8FAD2876544400D8D70B /* ContentView.swift in Sources */,
+				523EFFD728781187003D72B4 /* CLExtension.swift in Sources */,
+				527384732881DFAF00029D8B /* ColorPolyline.swift in Sources */,
+				524F8FAD2876544400D8D70B /* IntersectionView.swift in Sources */,
+				523EFFD52877C2E5003D72B4 /* MapView.swift in Sources */,
+				527384712880E4DB00029D8B /* Intersection.swift in Sources */,
 				524F8FAB2876544400D8D70B /* Green_LightApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

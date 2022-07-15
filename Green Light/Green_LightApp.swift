@@ -11,7 +11,7 @@ import SwiftUI
 struct Green_LightApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            IntersectionView(intersection: houghtonAndStine)
         }
     }
 }
