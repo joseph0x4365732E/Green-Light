@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		523EFFD52877C2E5003D72B4 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523EFFD42877C2E5003D72B4 /* MapView.swift */; };
 		523EFFD728781187003D72B4 /* CLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523EFFD628781187003D72B4 /* CLExtension.swift */; };
+		5243DC9D2883321B00536BF2 /* ImageOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5243DC9C2883321B00536BF2 /* ImageOverlay.swift */; };
 		524F8FAB2876544400D8D70B /* Green_LightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F8FAA2876544400D8D70B /* Green_LightApp.swift */; };
 		524F8FAD2876544400D8D70B /* IntersectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F8FAC2876544400D8D70B /* IntersectionView.swift */; };
 		524F8FAF2876544500D8D70B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 524F8FAE2876544500D8D70B /* Assets.xcassets */; };
@@ -18,6 +19,9 @@
 		524F8FC82876544600D8D70B /* Green_LightUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F8FC72876544600D8D70B /* Green_LightUITestsLaunchTests.swift */; };
 		527384712880E4DB00029D8B /* Intersection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527384702880E4DB00029D8B /* Intersection.swift */; };
 		527384732881DFAF00029D8B /* ColorPolyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527384722881DFAF00029D8B /* ColorPolyline.swift */; };
+		527384752882065500029D8B /* SignalAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527384742882065500029D8B /* SignalAnnotation.swift */; };
+		52BAA4E92891E87D00365730 /* CGExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BAA4E82891E87D00365730 /* CGExtension.swift */; };
+		52BAA4EB2892519C00365730 /* SignalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BAA4EA2892519C00365730 /* SignalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,7 @@
 /* Begin PBXFileReference section */
 		523EFFD42877C2E5003D72B4 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		523EFFD628781187003D72B4 /* CLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLExtension.swift; sourceTree = "<group>"; };
+		5243DC9C2883321B00536BF2 /* ImageOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageOverlay.swift; sourceTree = "<group>"; };
 		524F8FA72876544400D8D70B /* Green Light.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Green Light.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		524F8FAA2876544400D8D70B /* Green_LightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Green_LightApp.swift; sourceTree = "<group>"; };
 		524F8FAC2876544400D8D70B /* IntersectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntersectionView.swift; sourceTree = "<group>"; };
@@ -52,6 +57,9 @@
 		524F8FC72876544600D8D70B /* Green_LightUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Green_LightUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		527384702880E4DB00029D8B /* Intersection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intersection.swift; sourceTree = "<group>"; };
 		527384722881DFAF00029D8B /* ColorPolyline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPolyline.swift; sourceTree = "<group>"; };
+		527384742882065500029D8B /* SignalAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalAnnotation.swift; sourceTree = "<group>"; };
+		52BAA4E82891E87D00365730 /* CGExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGExtension.swift; sourceTree = "<group>"; };
+		52BAA4EA2892519C00365730 /* SignalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +113,13 @@
 				524F8FAA2876544400D8D70B /* Green_LightApp.swift */,
 				524F8FAC2876544400D8D70B /* IntersectionView.swift */,
 				527384702880E4DB00029D8B /* Intersection.swift */,
-				523EFFD628781187003D72B4 /* CLExtension.swift */,
 				523EFFD42877C2E5003D72B4 /* MapView.swift */,
+				52BAA4EA2892519C00365730 /* SignalView.swift */,
+				527384742882065500029D8B /* SignalAnnotation.swift */,
 				527384722881DFAF00029D8B /* ColorPolyline.swift */,
+				5243DC9C2883321B00536BF2 /* ImageOverlay.swift */,
+				523EFFD628781187003D72B4 /* CLExtension.swift */,
+				52BAA4E82891E87D00365730 /* CGExtension.swift */,
 				524F8FAE2876544500D8D70B /* Assets.xcassets */,
 				524F8FB02876544500D8D70B /* Preview Content */,
 			);
@@ -270,10 +282,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				523EFFD728781187003D72B4 /* CLExtension.swift in Sources */,
+				527384752882065500029D8B /* SignalAnnotation.swift in Sources */,
+				5243DC9D2883321B00536BF2 /* ImageOverlay.swift in Sources */,
 				527384732881DFAF00029D8B /* ColorPolyline.swift in Sources */,
 				524F8FAD2876544400D8D70B /* IntersectionView.swift in Sources */,
 				523EFFD52877C2E5003D72B4 /* MapView.swift in Sources */,
 				527384712880E4DB00029D8B /* Intersection.swift in Sources */,
+				52BAA4E92891E87D00365730 /* CGExtension.swift in Sources */,
+				52BAA4EB2892519C00365730 /* SignalView.swift in Sources */,
 				524F8FAB2876544400D8D70B /* Green_LightApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

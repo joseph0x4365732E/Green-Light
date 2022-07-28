@@ -13,60 +13,78 @@ import MapKit
 let laneWidth = 12.0
 let lanesWide = 2.0
 let roadWidth = laneWidth * lanesWide
+let laneCenter = laneWidth / 2
 let halfRoad = roadWidth / 2
 let plotDist = 1320.0 // 1/4 Mile
 let stripeWidth = 0.3
 let fullRoadWidth = roadWidth + stripeWidth
 let stripeLength = 1.5
 let stripeSpacing = 6.0
-let teslaWidth = 72.8 / 12
+let teslaWidth = 82.2 / 12
 let teslaLength = 184.8 / 12
 let carSpacing = 24.0
 
-let fullPlotMeters = meters(from: 2 * plotDist)
+let carImage = UIImage(named: "Car")!
 
-//class PolyRegion {
-//    var points: [CLLocationCoordinate2D]
-//
-//    func contains(pt: CLLocationCoordinate2D) -> Bool {
-//        return false
-//    }
-//}
+let fullPlotMeters = meters(from: 2 * plotDist)
+let satZoomMeters = fullPlotMeters / 4
+let zoomedPlotMeters = fullPlotMeters / 16
+
 
 struct Car {
     var location: CLLocationCoordinate2D
+    var direction: CLLocationDirection
 }
 
 struct Route {
     var points: [CLLocationCoordinate2D]
-    var cars: [Car] = []
+    var cars: [Car]
     
-    init(points: [CLLocationCoordinate2D]) {
+    init(cars: [Car] = [], points: [CLLocationCoordinate2D]) {
         self.points = points
+        self.cars = cars
     }
     
-    init(points: () -> [CLLocationCoordinate2D]) {
+    init(cars: [Car] = [], points: () -> [CLLocationCoordinate2D]) {
         self.points = points()
+        self.cars = cars
     }
 }
 
+// MARK: Intersection
 struct Intersection {
-    var region: MKCoordinateRegion
+    var center: CLLocationCoordinate2D
     var bounds: [CLLocationCoordinate2D]
     var routes: [Route]
     
-    init(region: MKCoordinateRegion, routes: [Route], bounds: [CLLocationCoordinate2D]) {
-        self.region = region
+    init(center: CLLocationCoordinate2D, routes: [Route], bounds: [CLLocationCoordinate2D]) {
+        self.center = center
         self.bounds = bounds
         self.routes = routes
     }
     
-    init(region: MKCoordinateRegion, routes: [Route], bounds: ()->[CLLocationCoordinate2D]) {
-        self.region = region
+    init(center: CLLocationCoordinate2D, routes: [Route], bounds: ()->[CLLocationCoordinate2D]) {
+        self.center = center
         self.bounds = bounds()
         self.routes = routes
     }
+    
+    // MARK: Lines
+    var boundsLine: ColorPolyline {
+        ColorPolyline(
+            polyline: MKPolyline(coordinates: bounds, count: bounds.count),
+            color: UIColor.systemRed
+        )
+    }
+    var routesLines: [ColorPolyline] {
+        routes.map { route in
+            ColorPolyline(polyline: MKPolyline(coordinates: route.points, count: route.points.count), color: UIColor.systemBlue)
+        }
+    }
+    var lines: [ColorPolyline] { [boundsLine] + routesLines }
 }
+
+//MARK: arc()
 
 func arc(radiusFeet: CLLocationDistance, center: CLLocationCoordinate2D, start: CLLocationDirection, end: CLLocationDirection, resolution: CLLocationDistance) -> [CLLocationCoordinate2D] {
     
@@ -90,40 +108,36 @@ func arc(radiusFeet: CLLocationDistance, center: CLLocationCoordinate2D, start: 
     }
 }
 
+func meters(from feet: Double) -> Double { feet / 3.28084 }
+
+//MARK: Examples
+
 let hSCentr =
 CLLocationCoordinate2D(
     latitude: 35.23794,
     longitude: -119.05679
 )
+//Cars
+let car1 = Car(location: hSCentr.offset(latFeet: -laneCenter, longFeet: laneCenter), direction: 0)
+let car2 = Car(location: hSCentr.offset(latFeet: -laneCenter, longFeet: 0), direction: 0)
+let northboundCars = [car1, car2]
 
-func meters(from feet: Double) -> Double {
-    feet / 3.28084
-}
-
-let northBound = Route {
-    let laneCenter = laneWidth / 2
+//Routes
+let northbound = Route(cars: northboundCars) {
     let sFarPoint = hSCentr.offset(latFeet: -plotDist, longFeet: laneCenter)
     let nFarPoint = hSCentr.offset(latFeet: plotDist, longFeet: laneCenter)
     
     return [sFarPoint, nFarPoint]
 }
-let eastBound = Route {
-    let laneCenter = laneWidth / 2
+let eastbound = Route {
     let wFarPoint = hSCentr.offset(latFeet: -laneCenter, longFeet: -plotDist)
     let eFarPoint = hSCentr.offset(latFeet: -laneCenter, longFeet: plotDist)
     
     return [wFarPoint, eFarPoint]
 }
-let houghtonAndStine = Intersection(
-    region:
-        MKCoordinateRegion(
-            center: hSCentr,
-            latitudinalMeters: fullPlotMeters,
-            longitudinalMeters: fullPlotMeters
-        ),
-    routes: [northBound, eastBound]
-    ) {
-        
+
+//Intersection
+let houghtonAndStine = Intersection(center: hSCentr, routes: [northbound, eastbound]) {
         let curbRadius = 25.0;
         let farENEPoint = hSCentr
             .offset(

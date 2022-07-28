@@ -8,29 +8,31 @@
 import SwiftUI
 import MapKit
 
+//MARK: MP ViewRepresentable
 struct MapView: UIViewRepresentable {
-    var mapView: MKMapView = MKMapView()
-    
     @Binding var region: MKCoordinateRegion
+    @Binding var mapType: MKMapType
+    @Binding var overlays: [MKOverlay]
     var polylines: [ColorPolyline]
-    var overlays: [MKOverlay] {
+    private var allOverlays: [MKOverlay] {
+        overlays +
         polylines.map(\.polyline)
     }
+    @Binding var annotations: [MKAnnotation]
     
     func makeUIView(context: Context) -> MKMapView {
+        let mapView = MKMapView()
         mapView.delegate = context.coordinator
         mapView.region = region
-        mapView.mapType = .satellite
-        
-        mapView.addOverlays(overlays)
+        mapView.mapType = mapType
+        mapView.addOverlays(allOverlays)
+        mapView.addAnnotations(annotations)
         return mapView
     }
     
     func updateUIView(_ view: MKMapView, context: Context) {
-        mapView.setRegion(region, animated: true)
-        
-        mapView.removeOverlays(mapView.overlays)
-        mapView.addOverlays(overlays)
+        view.setRegion(region, animated: true)
+        view.mapType = mapType
     }
     
     func makeCoordinator() -> Coordinator {
@@ -38,6 +40,7 @@ struct MapView: UIViewRepresentable {
     }
 }
 
+//MARK: Coordinator
 class Coordinator: NSObject, MKMapViewDelegate {
     var myMap: MapView
     var colors: [MKPolyline: UIColor]
@@ -59,15 +62,41 @@ class Coordinator: NSObject, MKMapViewDelegate {
             renderer.lineWidth = 1
             return renderer
         }
+        if let imageOverlay = overlay as? ImageOverlay {
+            let renderer = ImageOverlayRenderer(overlay: imageOverlay)
+            return renderer
+        }
         return MKOverlayRenderer()
     }
-    func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
+    
+    func mapViewDidChangeVisibleRegion(_ mapView: MKMapView) {
         myMap.region = mapView.region
     }
-//    func mapViewDidChangeVisibleRegion(_ mapView: MKMapView) {
-//        myMap.region = mapView.region
-//    }
+    
+    //https://www.youtube.com/watch?v=DHpL8yz6ot0
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        guard !(annotation is MKUserLocation) else {
+            return nil
+        }
+        
+        if let signalAnn = annotation as? SignalAnnotation {
+            let annView = mapView.dequeueReusableAnnotationView(withIdentifier: signalAnn.id) ?? MKAnnotationView(annotation: annotation, reuseIdentifier: signalAnn.id)
+            // the constructor is not evaluated unless the optional is nil - I tested this in REPL - the second expression is not evaluated and cached, for example.
+            annView.addSubview(UIHostingController(rootView: SignalView()).view)
+            return annView
+        }
+        
+        let annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "car") ?? MKAnnotationView(annotation: annotation, reuseIdentifier: "car")
+        annotationView.image = UIImage(named: "Car")
+        return annotationView
+    }
 }
+
+// MARK: Previews
+
+let jobsTheater = CLLocationCoordinate2D(latitude: 37.330828, longitude: -122.007495)
+let cafeMacs = CLLocationCoordinate2D(latitude: 37.336083, longitude: -122.007356)
+let appleWellness = CLLocationCoordinate2D(latitude: 37.336901, longitude:  -122.012345)
 
 struct MapView_Previews: PreviewProvider {
     struct MapView_PreviewProvider: View {
@@ -78,16 +107,26 @@ struct MapView_Previews: PreviewProvider {
         )
         
         private var polyline = ColorPolyline(polyline: MKPolyline(coordinates: [
-            // Steve Jobs theatre
-            CLLocationCoordinate2D(latitude: 37.330828, longitude: -122.007495),
-            // Caffè Macs
-            CLLocationCoordinate2D(latitude: 37.336083, longitude: -122.007356),
-            // Apple wellness center
-            CLLocationCoordinate2D(latitude: 37.336901, longitude:  -122.012345)
+            jobsTheater,
+            cafeMacs,
+            appleWellness
         ], count: 3), color: UIColor.systemGreen)
         
         var body: some View {
-            MapView(region: $region, polylines: [polyline])
+            MapView(
+                region: $region,
+                mapType: .constant(.satellite),
+                overlays: .constant([
+                    ImageOverlay(
+                        image: carImage,
+                        coordinate: jobsTheater,
+                        direction: 30,
+                        widthFeet: teslaLength,
+                        heightFeet: teslaLength
+                    )]),
+                polylines: [polyline],
+                annotations: Binding<[MKAnnotation]>.constant([MKAnnotation]())
+            )
             .edgesIgnoringSafeArea(.all)
         }
     }

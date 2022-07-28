@@ -9,47 +9,44 @@ import SwiftUI
 import MapKit
 
 //https://gist.github.com/shaundon/00be84deb3450e31db90a31d5d5b7adc/raw/d010d68ac08e49f50603d4006ccbb051cc807902/MapView.swift
-
 struct IntersectionView: View {
-    @State var region =
-    MKCoordinateRegion(
-        center:
-            CLLocationCoordinate2D(
-                latitude: 35.23794,
-                longitude: -119.05679
-            ),
-        latitudinalMeters: fullPlotMeters / 8,
-        longitudinalMeters: fullPlotMeters / 8
-    )
+    @State var region: MKCoordinateRegion
     @State var intersection: Intersection
     @State var zoomedIn = true
+    @State var satellite = false
+    @State var mapType = MKMapType.standard
     
-    var boundsLine: ColorPolyline {
-        ColorPolyline(
-            polyline: MKPolyline(coordinates: intersection.bounds, count: intersection.bounds.count),
-            color: UIColor.systemRed
-        )
+    init(zoomMeters: CLLocationDistance = zoomedPlotMeters, intersection: Intersection) {
+        self.region = MKCoordinateRegion(center: intersection.center, latitudinalMeters: zoomMeters, longitudinalMeters: zoomMeters)
+        self.intersection = intersection
     }
     
-    var routesLines: [ColorPolyline] {
-        intersection.routes.map { route in
-            ColorPolyline(polyline: MKPolyline(coordinates: route.points, count: route.points.count), color: UIColor.systemBlue)
-            
+    var annotations: [MKAnnotation] = []//[exampleSignalAnnotation]
+    var carOverlays: [MKOverlay] {
+        intersection.routes.flatMap { route in
+            route.cars.map { car in
+                ImageOverlay(car: car) as MKOverlay
+            }
         }
     }
     
-    var lines: [ColorPolyline] { [boundsLine] + routesLines }
-
-    
     func toggleZoom() {
+        let newSize = !zoomedIn ? (satellite ? satZoomMeters : zoomedPlotMeters) : fullPlotMeters
+        region = MKCoordinateRegion(center: hSCentr, latitudinalMeters: newSize, longitudinalMeters: newSize )
         zoomedIn.toggle()
-        let zoomSize = zoomedIn ? fullPlotMeters / 8 : fullPlotMeters
-        region =
-        MKCoordinateRegion(
-            center: hSCentr,
-            latitudinalMeters: zoomSize,
-            longitudinalMeters: zoomSize
-        )
+    }
+    
+    func toggleMapType() {
+        satellite.toggle()
+        mapType = satellite ? .satellite : .standard
+    }
+    
+    func divider() -> some View {
+        Group {
+            Spacer()
+            Divider()
+            Spacer()
+        }
     }
     
     func overlayButtons() -> some View {
@@ -57,31 +54,23 @@ struct IntersectionView: View {
             HStack {
                 Spacer()
                 VStack(spacing: 0) {
-                    Button {
-                        withAnimation() {
-                            toggleZoom()
-                        }
-                    } label: {
+                    Spacer()
+                    Button(action: { withAnimation() { toggleZoom() } }, label: {
                         Image(systemName: "scope")
-                            .resizable()
-                            .imageScale(.large)
-                            .scaledToFit()
-                            .padding(10)
-                    }
-                    Divider()
-                    Button {
-
-                    } label: {
-                        Image(systemName: "play")
-                            .resizable()
-                            .imageScale(.large)
-                            .scaledToFit()
-                            .padding(14)
-                    }
+                    })
+                    divider()
+                    Button(action: { toggleMapType() }, label: {
+                        Image(systemName: satellite ? "globe.americas.fill" : "map")
+                    })
+                    divider()
+                    Button(action: {}, label: { Image(systemName: "play") })
+                    Spacer()
                 }
-                .frame(width: 50)
+                .imageScale(.large)
+                .aspectRatio(1/3.0, contentMode: .fit)
+                .frame(width: 40)
                 .background(RoundedRectangle(cornerRadius: 5).fill(Color(uiColor: .systemGray6)))
-                .padding(.horizontal)
+                .padding()
             }
             Spacer()
         }
@@ -89,9 +78,7 @@ struct IntersectionView: View {
 
     var body: some View {
         ZStack {
-            GeometryReader { geom in
-                MapView(region: $region, polylines: lines)
-            }
+            MapView(region: $region, mapType: $mapType, overlays: .constant(carOverlays), polylines: intersection.lines, annotations: .constant(annotations))
             .edgesIgnoringSafeArea(.all)
             
             overlayButtons()
@@ -104,3 +91,5 @@ struct ContentView_Previews: PreviewProvider {
         IntersectionView(intersection: houghtonAndStine)
     }
 }
+
+let exampleSignalAnnotation = SignalAnnotation(coordinate: hSCentr.offset(latFeet: laneWidth * 4, longFeet: laneWidth * 3), id: "sig-from-intrsctn.swft") as MKAnnotation
