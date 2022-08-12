@@ -102,12 +102,10 @@ struct SignalState {
     
     func advanced(byTime dt: TimeInterval) -> SignalState {
         let newColors: [LightColor]
-        let newYellowCountdown: TimeInterval
-        if yellowCountdown <= dt { // yellow will be done
-            newYellowCountdown = 0
+        let newYellowCountdown: TimeInterval = max(0, yellowCountdown - dt)
+        if newYellowCountdown == 0 { // yellow will be done
             newColors = colors.replacing([.yellow], with: [.red]).replacing([.waitingRed], with: [.green])
         } else {
-            let newYellowCountdown = yellowCountdown - dt
             newColors = colors
         }
         return SignalState(colors: newColors, yellowCountdown: newYellowCountdown)
