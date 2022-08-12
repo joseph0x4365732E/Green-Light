@@ -8,7 +8,7 @@
 import SwiftUI
 import MapKit
 
-//MARK: MP ViewRepresentable
+// MARK: MP ViewRepresentable
 struct MapView: UIViewRepresentable {
     @Binding var region: MKCoordinateRegion
     @Binding var mapType: MKMapType
@@ -40,7 +40,7 @@ struct MapView: UIViewRepresentable {
     }
 }
 
-//MARK: Coordinator
+// MARK: Coordinator
 class Coordinator: NSObject, MKMapViewDelegate {
     var myMap: MapView
     var colors: [MKPolyline: UIColor]
@@ -56,9 +56,9 @@ class Coordinator: NSObject, MKMapViewDelegate {
     }
     
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
-        if let routePolyline = overlay as? MKPolyline {
-            let renderer = MKPolylineRenderer(polyline: routePolyline)
-            renderer.strokeColor = colors[routePolyline]
+        if let roadPolyline = overlay as? MKPolyline {
+            let renderer = MKPolylineRenderer(polyline: roadPolyline)
+            renderer.strokeColor = colors[roadPolyline]
             renderer.lineWidth = 1
             return renderer
         }
@@ -79,10 +79,10 @@ class Coordinator: NSObject, MKMapViewDelegate {
             return nil
         }
         
-        if let signalAnn = annotation as? SignalAnnotation {
-            let annView = mapView.dequeueReusableAnnotationView(withIdentifier: signalAnn.id) ?? MKAnnotationView(annotation: annotation, reuseIdentifier: signalAnn.id)
+        if let lightAnn = annotation as? LightAnnotation {
+            let annView = mapView.dequeueReusableAnnotationView(withIdentifier: lightAnn.id) ?? MKAnnotationView(annotation: annotation, reuseIdentifier: lightAnn.id)
             // the constructor is not evaluated unless the optional is nil - I tested this in REPL - the second expression is not evaluated and cached, for example.
-            annView.addSubview(UIHostingController(rootView: SignalView()).view)
+            annView.addSubview(UIHostingController(rootView: LightView()).view)
             return annView
         }
         

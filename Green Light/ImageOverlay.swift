@@ -26,8 +26,14 @@ class ImageOverlay : NSObject, MKOverlay {
         self.heightFeet = heightFeet
     }
     
-    convenience init(car: Car) {
-        self.init(image: carImage, coordinate: car.location, direction: car.direction, widthFeet: teslaWidth, heightFeet: teslaLength)
+    convenience init(car: Car, road: Road) {
+        self.init(
+            image: carImage,
+            coordinate: road.location(of: car),
+            direction: road.direction(of: car),
+            widthFeet: teslaWidth,
+            heightFeet: teslaLength
+        )
     }
 }
 

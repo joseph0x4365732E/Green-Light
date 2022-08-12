@@ -26,47 +26,32 @@ let carSpacing = 24.0
 
 let carImage = UIImage(named: "Car")!
 
-let fullPlotMeters = meters(from: 2 * plotDist)
+let plotMeters = meters(fromFT: plotDist)
+let fullPlotMeters = meters(fromFT: 2 * plotDist)
 let satZoomMeters = fullPlotMeters / 4
-let zoomedPlotMeters = fullPlotMeters / 16
+let zoomedPlotMeters = fullPlotMeters / 25
 
-
-struct Car {
-    var location: CLLocationCoordinate2D
-    var direction: CLLocationDirection
-}
-
-struct Route {
-    var points: [CLLocationCoordinate2D]
-    var cars: [Car]
-    
-    init(cars: [Car] = [], points: [CLLocationCoordinate2D]) {
-        self.points = points
-        self.cars = cars
-    }
-    
-    init(cars: [Car] = [], points: () -> [CLLocationCoordinate2D]) {
-        self.points = points()
-        self.cars = cars
-    }
-}
+let gravity: CLLocationAcceleration = 9.8
+let decelerationGs = 0.4
+let yellowDecelerationRate: CLLocationAcceleration = meters(fromFT: 10)
+let driverReactionTime = 1.0
 
 // MARK: Intersection
 struct Intersection {
     var center: CLLocationCoordinate2D
+    var roads: [Road]
     var bounds: [CLLocationCoordinate2D]
-    var routes: [Route]
     
-    init(center: CLLocationCoordinate2D, routes: [Route], bounds: [CLLocationCoordinate2D]) {
+    init(center: CLLocationCoordinate2D, roads: [Road], bounds: [CLLocationCoordinate2D]) {
         self.center = center
+        self.roads = roads
         self.bounds = bounds
-        self.routes = routes
     }
     
-    init(center: CLLocationCoordinate2D, routes: [Route], bounds: ()->[CLLocationCoordinate2D]) {
+    init(center: CLLocationCoordinate2D, roads: [Road], bounds: ()->[CLLocationCoordinate2D]) {
         self.center = center
         self.bounds = bounds()
-        self.routes = routes
+        self.roads = roads
     }
     
     // MARK: Lines
@@ -76,15 +61,24 @@ struct Intersection {
             color: UIColor.systemRed
         )
     }
-    var routesLines: [ColorPolyline] {
-        routes.map { route in
-            ColorPolyline(polyline: MKPolyline(coordinates: route.points, count: route.points.count), color: UIColor.systemBlue)
+    var roadsLines: [ColorPolyline] {
+        roads.map { road in
+            ColorPolyline(polyline: MKPolyline(coordinates: road.points, count: road.points.count), color: UIColor.systemBlue)
         }
     }
-    var lines: [ColorPolyline] { [boundsLine] + routesLines }
+    var carLines: [ColorPolyline] {
+        []
+//        roads.flatMap { rte in
+//            rte.cars
+//        }.map { car in
+//            let points = car.box
+//            return ColorPolyline(polyline: MKPolyline(coordinates: points, count: points.count), color: .blue)
+//        }
+    }
+    var lines: [ColorPolyline] { [boundsLine] + roadsLines + carLines }
 }
 
-//MARK: arc()
+// MARK: arc()
 
 func arc(radiusFeet: CLLocationDistance, center: CLLocationCoordinate2D, start: CLLocationDirection, end: CLLocationDirection, resolution: CLLocationDistance) -> [CLLocationCoordinate2D] {
     
@@ -108,66 +102,6 @@ func arc(radiusFeet: CLLocationDistance, center: CLLocationCoordinate2D, start: 
     }
 }
 
-func meters(from feet: Double) -> Double { feet / 3.28084 }
+func meters(fromFT feet: Double) -> Double { feet * 0.304800609601 }
 
-//MARK: Examples
-
-let hSCentr =
-CLLocationCoordinate2D(
-    latitude: 35.23794,
-    longitude: -119.05679
-)
-//Cars
-let car1 = Car(location: hSCentr.offset(latFeet: -laneCenter, longFeet: laneCenter), direction: 0)
-let car2 = Car(location: hSCentr.offset(latFeet: -laneCenter, longFeet: 0), direction: 0)
-let northboundCars = [car1, car2]
-
-//Routes
-let northbound = Route(cars: northboundCars) {
-    let sFarPoint = hSCentr.offset(latFeet: -plotDist, longFeet: laneCenter)
-    let nFarPoint = hSCentr.offset(latFeet: plotDist, longFeet: laneCenter)
-    
-    return [sFarPoint, nFarPoint]
-}
-let eastbound = Route {
-    let wFarPoint = hSCentr.offset(latFeet: -laneCenter, longFeet: -plotDist)
-    let eFarPoint = hSCentr.offset(latFeet: -laneCenter, longFeet: plotDist)
-    
-    return [wFarPoint, eFarPoint]
-}
-
-//Intersection
-let houghtonAndStine = Intersection(center: hSCentr, routes: [northbound, eastbound]) {
-        let curbRadius = 25.0;
-        let farENEPoint = hSCentr
-            .offset(
-                latFeet: halfRoad, // y
-                longFeet: plotDist // x
-            )
-        let eNEpoint = hSCentr.offset(latFeet: halfRoad, longFeet: halfRoad + curbRadius)
-        let nEArcCenter = hSCentr.offset(latFeet: halfRoad + curbRadius, longFeet: halfRoad + curbRadius)
-        let nNEPoint = hSCentr.offset(latFeet: halfRoad + curbRadius, longFeet: halfRoad)
-        let farNNEPoint = hSCentr.offset(latFeet: plotDist, longFeet: halfRoad)
-        
-        let eNELine = [farENEPoint, eNEpoint]
-        let nNELine = [nNEPoint, farNNEPoint]
-
-        let arcPoints:[CLLocationCoordinate2D] = arc(radiusFeet: curbRadius, center: nEArcCenter, start: 180, end: 90, resolution: 1) // EDIT increase resolution
-        
-        let nEPoints = eNELine + arcPoints + nNELine
-        let nLat = nEPoints.map(\.latitude)
-        let eLong = nEPoints.map(\.longitude)
-        let sLat = nLat.map { -$0 }
-        let wLong = eLong.map { -$0 }
-
-        let nWPoints:[CLLocationCoordinate2D] = nEPoints.map { $0.mirroredAcross(long: hSCentr.longitude) }.reversed()
-        let sWPoints:[CLLocationCoordinate2D] = nWPoints.map { pt in // flip across x axis
-            pt.mirroredAcross(lat: hSCentr.latitude)
-        }.reversed()
-        let sEPoints:[CLLocationCoordinate2D] = nEPoints.map { pt in // flip across x axis
-            pt.mirroredAcross(lat: hSCentr.latitude)
-        }.reversed()
-        
-        return nEPoints + nWPoints + sWPoints + sEPoints
-    }
-
+func mps(fromMPH mph: Double) -> Double { meters(fromFT: mph * 5280) / 3600 }

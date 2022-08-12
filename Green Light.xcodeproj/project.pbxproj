@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5215F2E1289F3FAC004DDDD5 /* RouteSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5215F2E0289F3FAC004DDDD5 /* RouteSlice.swift */; };
+		5215F2E328A059C5004DDDD5 /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5215F2E228A059C5004DDDD5 /* Signal.swift */; };
+		522EBD692898E248002052E1 /* Simulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522EBD682898E248002052E1 /* Simulation.swift */; };
+		522EBD6B2899DE85002052E1 /* Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522EBD6A2899DE85002052E1 /* Light.swift */; };
+		523B2D83289645B90008CCAC /* Road.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523B2D82289645B90008CCAC /* Road.swift */; };
 		523EFFD52877C2E5003D72B4 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523EFFD42877C2E5003D72B4 /* MapView.swift */; };
 		523EFFD728781187003D72B4 /* CLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523EFFD628781187003D72B4 /* CLExtension.swift */; };
 		5243DC9D2883321B00536BF2 /* ImageOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5243DC9C2883321B00536BF2 /* ImageOverlay.swift */; };
 		524F8FAB2876544400D8D70B /* Green_LightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F8FAA2876544400D8D70B /* Green_LightApp.swift */; };
-		524F8FAD2876544400D8D70B /* IntersectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F8FAC2876544400D8D70B /* IntersectionView.swift */; };
+		524F8FAD2876544400D8D70B /* SimulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F8FAC2876544400D8D70B /* SimulationView.swift */; };
 		524F8FAF2876544500D8D70B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 524F8FAE2876544500D8D70B /* Assets.xcassets */; };
 		524F8FB22876544500D8D70B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 524F8FB12876544500D8D70B /* Preview Assets.xcassets */; };
 		524F8FBC2876544600D8D70B /* Green_LightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F8FBB2876544600D8D70B /* Green_LightTests.swift */; };
@@ -19,9 +24,11 @@
 		524F8FC82876544600D8D70B /* Green_LightUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F8FC72876544600D8D70B /* Green_LightUITestsLaunchTests.swift */; };
 		527384712880E4DB00029D8B /* Intersection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527384702880E4DB00029D8B /* Intersection.swift */; };
 		527384732881DFAF00029D8B /* ColorPolyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527384722881DFAF00029D8B /* ColorPolyline.swift */; };
-		527384752882065500029D8B /* SignalAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527384742882065500029D8B /* SignalAnnotation.swift */; };
+		527384752882065500029D8B /* LightAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527384742882065500029D8B /* LightAnnotation.swift */; };
 		52BAA4E92891E87D00365730 /* CGExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BAA4E82891E87D00365730 /* CGExtension.swift */; };
-		52BAA4EB2892519C00365730 /* SignalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BAA4EA2892519C00365730 /* SignalView.swift */; };
+		52BAA4EB2892519C00365730 /* LightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BAA4EA2892519C00365730 /* LightView.swift */; };
+		52BAA4ED289351BF00365730 /* HoughtonAndStine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BAA4EC289351BF00365730 /* HoughtonAndStine.swift */; };
+		52BAA4EF2894587A00365730 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BAA4EE2894587A00365730 /* Car.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,12 +49,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5215F2E0289F3FAC004DDDD5 /* RouteSlice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteSlice.swift; sourceTree = "<group>"; };
+		5215F2E228A059C5004DDDD5 /* Signal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signal.swift; sourceTree = "<group>"; };
+		522EBD682898E248002052E1 /* Simulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simulation.swift; sourceTree = "<group>"; };
+		522EBD6A2899DE85002052E1 /* Light.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Light.swift; sourceTree = "<group>"; };
+		523B2D82289645B90008CCAC /* Road.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Road.swift; sourceTree = "<group>"; };
 		523EFFD42877C2E5003D72B4 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		523EFFD628781187003D72B4 /* CLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLExtension.swift; sourceTree = "<group>"; };
 		5243DC9C2883321B00536BF2 /* ImageOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageOverlay.swift; sourceTree = "<group>"; };
 		524F8FA72876544400D8D70B /* Green Light.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Green Light.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		524F8FAA2876544400D8D70B /* Green_LightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Green_LightApp.swift; sourceTree = "<group>"; };
-		524F8FAC2876544400D8D70B /* IntersectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntersectionView.swift; sourceTree = "<group>"; };
+		524F8FAC2876544400D8D70B /* SimulationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationView.swift; sourceTree = "<group>"; };
 		524F8FAE2876544500D8D70B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		524F8FB12876544500D8D70B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		524F8FB72876544600D8D70B /* Green LightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Green LightTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,9 +69,11 @@
 		524F8FC72876544600D8D70B /* Green_LightUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Green_LightUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		527384702880E4DB00029D8B /* Intersection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intersection.swift; sourceTree = "<group>"; };
 		527384722881DFAF00029D8B /* ColorPolyline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPolyline.swift; sourceTree = "<group>"; };
-		527384742882065500029D8B /* SignalAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalAnnotation.swift; sourceTree = "<group>"; };
+		527384742882065500029D8B /* LightAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightAnnotation.swift; sourceTree = "<group>"; };
 		52BAA4E82891E87D00365730 /* CGExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGExtension.swift; sourceTree = "<group>"; };
-		52BAA4EA2892519C00365730 /* SignalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalView.swift; sourceTree = "<group>"; };
+		52BAA4EA2892519C00365730 /* LightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightView.swift; sourceTree = "<group>"; };
+		52BAA4EC289351BF00365730 /* HoughtonAndStine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoughtonAndStine.swift; sourceTree = "<group>"; };
+		52BAA4EE2894587A00365730 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,11 +125,18 @@
 			isa = PBXGroup;
 			children = (
 				524F8FAA2876544400D8D70B /* Green_LightApp.swift */,
-				524F8FAC2876544400D8D70B /* IntersectionView.swift */,
+				524F8FAC2876544400D8D70B /* SimulationView.swift */,
+				52BAA4EC289351BF00365730 /* HoughtonAndStine.swift */,
 				527384702880E4DB00029D8B /* Intersection.swift */,
+				523B2D82289645B90008CCAC /* Road.swift */,
+				5215F2E0289F3FAC004DDDD5 /* RouteSlice.swift */,
+				5215F2E228A059C5004DDDD5 /* Signal.swift */,
+				522EBD6A2899DE85002052E1 /* Light.swift */,
+				52BAA4EE2894587A00365730 /* Car.swift */,
+				522EBD682898E248002052E1 /* Simulation.swift */,
 				523EFFD42877C2E5003D72B4 /* MapView.swift */,
-				52BAA4EA2892519C00365730 /* SignalView.swift */,
-				527384742882065500029D8B /* SignalAnnotation.swift */,
+				52BAA4EA2892519C00365730 /* LightView.swift */,
+				527384742882065500029D8B /* LightAnnotation.swift */,
 				527384722881DFAF00029D8B /* ColorPolyline.swift */,
 				5243DC9C2883321B00536BF2 /* ImageOverlay.swift */,
 				523EFFD628781187003D72B4 /* CLExtension.swift */,
@@ -281,15 +302,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52BAA4ED289351BF00365730 /* HoughtonAndStine.swift in Sources */,
+				522EBD6B2899DE85002052E1 /* Light.swift in Sources */,
 				523EFFD728781187003D72B4 /* CLExtension.swift in Sources */,
-				527384752882065500029D8B /* SignalAnnotation.swift in Sources */,
+				52BAA4EF2894587A00365730 /* Car.swift in Sources */,
+				527384752882065500029D8B /* LightAnnotation.swift in Sources */,
+				5215F2E1289F3FAC004DDDD5 /* RouteSlice.swift in Sources */,
+				522EBD692898E248002052E1 /* Simulation.swift in Sources */,
+				523B2D83289645B90008CCAC /* Road.swift in Sources */,
 				5243DC9D2883321B00536BF2 /* ImageOverlay.swift in Sources */,
 				527384732881DFAF00029D8B /* ColorPolyline.swift in Sources */,
-				524F8FAD2876544400D8D70B /* IntersectionView.swift in Sources */,
+				524F8FAD2876544400D8D70B /* SimulationView.swift in Sources */,
 				523EFFD52877C2E5003D72B4 /* MapView.swift in Sources */,
 				527384712880E4DB00029D8B /* Intersection.swift in Sources */,
+				5215F2E328A059C5004DDDD5 /* Signal.swift in Sources */,
 				52BAA4E92891E87D00365730 /* CGExtension.swift in Sources */,
-				52BAA4EB2892519C00365730 /* SignalView.swift in Sources */,
+				52BAA4EB2892519C00365730 /* LightView.swift in Sources */,
 				524F8FAB2876544400D8D70B /* Green_LightApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,7 +405,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -431,7 +459,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

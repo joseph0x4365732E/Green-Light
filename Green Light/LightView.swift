@@ -1,5 +1,5 @@
 //
-//  SignalView.swift
+//  LightView.swift
 //  Green Light
 //
 //  Created by Joseph Cestone on 7/27/22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SignalView: View {
+struct LightView: View {
     var body: some View {
         VStack(spacing: 2.4) {
             Circle()
@@ -25,9 +25,9 @@ struct SignalView: View {
     }
 }
 
-struct SignalView_Previews: PreviewProvider {
+struct LightView_Previews: PreviewProvider {
     static var previews: some View {
-        SignalView()
+        LightView()
             .background(Color.white)
     }
 }

@@ -15,19 +15,21 @@ struct IntersectionView: View {
     @State var zoomedIn = true
     @State var satellite = false
     @State var mapType = MKMapType.standard
+    @State var simRunning = false
     
     init(zoomMeters: CLLocationDistance = zoomedPlotMeters, intersection: Intersection) {
         self.region = MKCoordinateRegion(center: intersection.center, latitudinalMeters: zoomMeters, longitudinalMeters: zoomMeters)
         self.intersection = intersection
     }
     
-    var annotations: [MKAnnotation] = []//[exampleSignalAnnotation]
+    var annotations: [MKAnnotation] = []//[exampleLightAnnotation]
     var carOverlays: [MKOverlay] {
-        intersection.routes.flatMap { route in
-            route.cars.map { car in
-                ImageOverlay(car: car) as MKOverlay
-            }
-        }
+        []
+//        intersection.roads.flatMap { road in
+//            road.cars.map { car in
+//                ImageOverlay(car: car) as MKOverlay
+//            }
+//        }
     }
     
     func toggleZoom() {
@@ -92,4 +94,4 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-let exampleSignalAnnotation = SignalAnnotation(coordinate: hSCentr.offset(latFeet: laneWidth * 4, longFeet: laneWidth * 3), id: "sig-from-intrsctn.swft") as MKAnnotation
+let exampleLightAnnotation = LightAnnotation(coordinate: hSCentr.offset(latFeet: laneWidth * 4, longFeet: laneWidth * 3), id: "sig-from-intrsctn.swft") as MKAnnotation
