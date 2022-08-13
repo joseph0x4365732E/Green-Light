@@ -5,6 +5,6 @@
       location = "group:GreenLightTestPlayground.playground">
    </FileRef>
    <FileRef
-      location = "container:Green Light.xcodeproj">
+      location = "container:GreenLight.xcodeproj">
    </FileRef>
 </Workspace>

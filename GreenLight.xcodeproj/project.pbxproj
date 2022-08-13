@@ -10,11 +10,11 @@
 		5215F2E1289F3FAC004DDDD5 /* RouteSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5215F2E0289F3FAC004DDDD5 /* RouteSlice.swift */; };
 		5215F2E328A059C5004DDDD5 /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5215F2E228A059C5004DDDD5 /* Signal.swift */; };
 		521D5C3528A6E5E900C25191 /* GreenLightUI.docc in Sources */ = {isa = PBXBuildFile; fileRef = 521D5C3428A6E5E900C25191 /* GreenLightUI.docc */; };
-		521D5C3B28A6E5E900C25191 /* GreenLightUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 521D5C3128A6E5E900C25191 /* GreenLightUI.framework */; };
+		521D5C3B28A6E5E900C25191 /* GreenLightKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 521D5C3128A6E5E900C25191 /* GreenLightKit.framework */; };
 		521D5C4228A6E5E900C25191 /* GreenLightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521D5C4128A6E5E900C25191 /* GreenLightUITests.swift */; };
 		521D5C4328A6E5E900C25191 /* GreenLightUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 521D5C3328A6E5E900C25191 /* GreenLightUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		521D5C4628A6E5E900C25191 /* GreenLightUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 521D5C3128A6E5E900C25191 /* GreenLightUI.framework */; };
-		521D5C4728A6E5E900C25191 /* GreenLightUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 521D5C3128A6E5E900C25191 /* GreenLightUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		521D5C4628A6E5E900C25191 /* GreenLightKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 521D5C3128A6E5E900C25191 /* GreenLightKit.framework */; };
+		521D5C4728A6E5E900C25191 /* GreenLightKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 521D5C3128A6E5E900C25191 /* GreenLightKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		521D5C4F28A6E60000C25191 /* Green_LightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F8FAA2876544400D8D70B /* Green_LightApp.swift */; };
 		521D5C5028A6E60600C25191 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523EFFD42877C2E5003D72B4 /* MapView.swift */; };
 		521D5C5128A6E60600C25191 /* Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522EBD6A2899DE85002052E1 /* Light.swift */; };
@@ -102,7 +102,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				521D5C4728A6E5E900C25191 /* GreenLightUI.framework in Embed Frameworks */,
+				521D5C4728A6E5E900C25191 /* GreenLightKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,10 +112,10 @@
 /* Begin PBXFileReference section */
 		5215F2E0289F3FAC004DDDD5 /* RouteSlice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteSlice.swift; sourceTree = "<group>"; };
 		5215F2E228A059C5004DDDD5 /* Signal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signal.swift; sourceTree = "<group>"; };
-		521D5C3128A6E5E900C25191 /* GreenLightUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GreenLightUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		521D5C3128A6E5E900C25191 /* GreenLightKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GreenLightKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		521D5C3328A6E5E900C25191 /* GreenLightUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GreenLightUI.h; sourceTree = "<group>"; };
 		521D5C3428A6E5E900C25191 /* GreenLightUI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = GreenLightUI.docc; sourceTree = "<group>"; };
-		521D5C3A28A6E5E900C25191 /* GreenLightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreenLightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		521D5C3A28A6E5E900C25191 /* GreenLightKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreenLightKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		521D5C4128A6E5E900C25191 /* GreenLightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenLightUITests.swift; sourceTree = "<group>"; };
 		521D5C6128A6EF3000C25191 /* SimulationPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationPlayer.swift; sourceTree = "<group>"; };
 		522EBD682898E248002052E1 /* Simulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simulation.swift; sourceTree = "<group>"; };
@@ -124,14 +124,14 @@
 		523EFFD42877C2E5003D72B4 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		523EFFD628781187003D72B4 /* CLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLExtension.swift; sourceTree = "<group>"; };
 		5243DC9C2883321B00536BF2 /* ImageOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageOverlay.swift; sourceTree = "<group>"; };
-		524F8FA72876544400D8D70B /* Green Light.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Green Light.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		524F8FA72876544400D8D70B /* GreenLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		524F8FAA2876544400D8D70B /* Green_LightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Green_LightApp.swift; sourceTree = "<group>"; };
 		524F8FAC2876544400D8D70B /* SimulationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationView.swift; sourceTree = "<group>"; };
 		524F8FAE2876544500D8D70B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		524F8FB12876544500D8D70B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		524F8FB72876544600D8D70B /* Green LightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Green LightTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		524F8FB72876544600D8D70B /* GreenLightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreenLightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		524F8FBB2876544600D8D70B /* Green_LightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Green_LightTests.swift; sourceTree = "<group>"; };
-		524F8FC12876544600D8D70B /* Green LightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Green LightUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		524F8FC12876544600D8D70B /* GreenLightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreenLightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		524F8FC52876544600D8D70B /* Green_LightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Green_LightUITests.swift; sourceTree = "<group>"; };
 		524F8FC72876544600D8D70B /* Green_LightUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Green_LightUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		527384702880E4DB00029D8B /* Intersection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intersection.swift; sourceTree = "<group>"; };
@@ -155,7 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				521D5C3B28A6E5E900C25191 /* GreenLightUI.framework in Frameworks */,
+				521D5C3B28A6E5E900C25191 /* GreenLightKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,7 +163,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				521D5C4628A6E5E900C25191 /* GreenLightUI.framework in Frameworks */,
+				521D5C4628A6E5E900C25191 /* GreenLightKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,31 +184,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		521D5C3228A6E5E900C25191 /* GreenLightUI */ = {
+		521D5C3228A6E5E900C25191 /* GreenLightKit */ = {
 			isa = PBXGroup;
 			children = (
 				521D5C3328A6E5E900C25191 /* GreenLightUI.h */,
 				521D5C3428A6E5E900C25191 /* GreenLightUI.docc */,
 			);
-			path = GreenLightUI;
+			path = GreenLightKit;
 			sourceTree = "<group>";
 		};
-		521D5C4028A6E5E900C25191 /* GreenLightUITests */ = {
+		521D5C4028A6E5E900C25191 /* GreenLightKitTests */ = {
 			isa = PBXGroup;
 			children = (
 				521D5C4128A6E5E900C25191 /* GreenLightUITests.swift */,
 			);
-			path = GreenLightUITests;
+			path = GreenLightKitTests;
 			sourceTree = "<group>";
 		};
 		524F8F9E2876544400D8D70B = {
 			isa = PBXGroup;
 			children = (
-				524F8FA92876544400D8D70B /* Green Light */,
-				524F8FBA2876544600D8D70B /* Green LightTests */,
-				524F8FC42876544600D8D70B /* Green LightUITests */,
-				521D5C3228A6E5E900C25191 /* GreenLightUI */,
-				521D5C4028A6E5E900C25191 /* GreenLightUITests */,
+				524F8FA92876544400D8D70B /* GreenLight */,
+				524F8FBA2876544600D8D70B /* GreenLightTests */,
+				524F8FC42876544600D8D70B /* GreenLightUITests */,
+				521D5C3228A6E5E900C25191 /* GreenLightKit */,
+				521D5C4028A6E5E900C25191 /* GreenLightKitTests */,
 				524F8FA82876544400D8D70B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -216,16 +216,16 @@
 		524F8FA82876544400D8D70B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				524F8FA72876544400D8D70B /* Green Light.app */,
-				524F8FB72876544600D8D70B /* Green LightTests.xctest */,
-				524F8FC12876544600D8D70B /* Green LightUITests.xctest */,
-				521D5C3128A6E5E900C25191 /* GreenLightUI.framework */,
-				521D5C3A28A6E5E900C25191 /* GreenLightUITests.xctest */,
+				524F8FA72876544400D8D70B /* GreenLight.app */,
+				524F8FB72876544600D8D70B /* GreenLightTests.xctest */,
+				524F8FC12876544600D8D70B /* GreenLightUITests.xctest */,
+				521D5C3128A6E5E900C25191 /* GreenLightKit.framework */,
+				521D5C3A28A6E5E900C25191 /* GreenLightKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		524F8FA92876544400D8D70B /* Green Light */ = {
+		524F8FA92876544400D8D70B /* GreenLight */ = {
 			isa = PBXGroup;
 			children = (
 				524F8FAA2876544400D8D70B /* Green_LightApp.swift */,
@@ -249,7 +249,7 @@
 				524F8FAE2876544500D8D70B /* Assets.xcassets */,
 				524F8FB02876544500D8D70B /* Preview Content */,
 			);
-			path = "Green Light";
+			path = GreenLight;
 			sourceTree = "<group>";
 		};
 		524F8FB02876544500D8D70B /* Preview Content */ = {
@@ -260,21 +260,21 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		524F8FBA2876544600D8D70B /* Green LightTests */ = {
+		524F8FBA2876544600D8D70B /* GreenLightTests */ = {
 			isa = PBXGroup;
 			children = (
 				524F8FBB2876544600D8D70B /* Green_LightTests.swift */,
 			);
-			path = "Green LightTests";
+			path = GreenLightTests;
 			sourceTree = "<group>";
 		};
-		524F8FC42876544600D8D70B /* Green LightUITests */ = {
+		524F8FC42876544600D8D70B /* GreenLightUITests */ = {
 			isa = PBXGroup;
 			children = (
 				524F8FC52876544600D8D70B /* Green_LightUITests.swift */,
 				524F8FC72876544600D8D70B /* Green_LightUITestsLaunchTests.swift */,
 			);
-			path = "Green LightUITests";
+			path = GreenLightUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,9 +291,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		521D5C3028A6E5E900C25191 /* GreenLightUI */ = {
+		521D5C3028A6E5E900C25191 /* GreenLightKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 521D5C4D28A6E5E900C25191 /* Build configuration list for PBXNativeTarget "GreenLightUI" */;
+			buildConfigurationList = 521D5C4D28A6E5E900C25191 /* Build configuration list for PBXNativeTarget "GreenLightKit" */;
 			buildPhases = (
 				521D5C2C28A6E5E900C25191 /* Headers */,
 				521D5C2D28A6E5E900C25191 /* Sources */,
@@ -304,14 +304,14 @@
 			);
 			dependencies = (
 			);
-			name = GreenLightUI;
+			name = GreenLightKit;
 			productName = GreenLightUI;
-			productReference = 521D5C3128A6E5E900C25191 /* GreenLightUI.framework */;
+			productReference = 521D5C3128A6E5E900C25191 /* GreenLightKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		521D5C3928A6E5E900C25191 /* GreenLightUITests */ = {
+		521D5C3928A6E5E900C25191 /* GreenLightKitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 521D5C4E28A6E5E900C25191 /* Build configuration list for PBXNativeTarget "GreenLightUITests" */;
+			buildConfigurationList = 521D5C4E28A6E5E900C25191 /* Build configuration list for PBXNativeTarget "GreenLightKitTests" */;
 			buildPhases = (
 				521D5C3628A6E5E900C25191 /* Sources */,
 				521D5C3728A6E5E900C25191 /* Frameworks */,
@@ -323,14 +323,14 @@
 				521D5C3D28A6E5E900C25191 /* PBXTargetDependency */,
 				521D5C3F28A6E5E900C25191 /* PBXTargetDependency */,
 			);
-			name = GreenLightUITests;
+			name = GreenLightKitTests;
 			productName = GreenLightUITests;
-			productReference = 521D5C3A28A6E5E900C25191 /* GreenLightUITests.xctest */;
+			productReference = 521D5C3A28A6E5E900C25191 /* GreenLightKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		524F8FA62876544400D8D70B /* Green Light */ = {
+		524F8FA62876544400D8D70B /* GreenLight */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 524F8FCB2876544600D8D70B /* Build configuration list for PBXNativeTarget "Green Light" */;
+			buildConfigurationList = 524F8FCB2876544600D8D70B /* Build configuration list for PBXNativeTarget "GreenLight" */;
 			buildPhases = (
 				524F8FA32876544400D8D70B /* Sources */,
 				524F8FA42876544400D8D70B /* Frameworks */,
@@ -342,14 +342,14 @@
 			dependencies = (
 				521D5C4528A6E5E900C25191 /* PBXTargetDependency */,
 			);
-			name = "Green Light";
+			name = GreenLight;
 			productName = "Green Light";
-			productReference = 524F8FA72876544400D8D70B /* Green Light.app */;
+			productReference = 524F8FA72876544400D8D70B /* GreenLight.app */;
 			productType = "com.apple.product-type.application";
 		};
-		524F8FB62876544600D8D70B /* Green LightTests */ = {
+		524F8FB62876544600D8D70B /* GreenLightTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 524F8FCE2876544600D8D70B /* Build configuration list for PBXNativeTarget "Green LightTests" */;
+			buildConfigurationList = 524F8FCE2876544600D8D70B /* Build configuration list for PBXNativeTarget "GreenLightTests" */;
 			buildPhases = (
 				524F8FB32876544600D8D70B /* Sources */,
 				524F8FB42876544600D8D70B /* Frameworks */,
@@ -360,14 +360,14 @@
 			dependencies = (
 				524F8FB92876544600D8D70B /* PBXTargetDependency */,
 			);
-			name = "Green LightTests";
+			name = GreenLightTests;
 			productName = "Green LightTests";
-			productReference = 524F8FB72876544600D8D70B /* Green LightTests.xctest */;
+			productReference = 524F8FB72876544600D8D70B /* GreenLightTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		524F8FC02876544600D8D70B /* Green LightUITests */ = {
+		524F8FC02876544600D8D70B /* GreenLightUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 524F8FD12876544600D8D70B /* Build configuration list for PBXNativeTarget "Green LightUITests" */;
+			buildConfigurationList = 524F8FD12876544600D8D70B /* Build configuration list for PBXNativeTarget "GreenLightUITests" */;
 			buildPhases = (
 				524F8FBD2876544600D8D70B /* Sources */,
 				524F8FBE2876544600D8D70B /* Frameworks */,
@@ -378,9 +378,9 @@
 			dependencies = (
 				524F8FC32876544600D8D70B /* PBXTargetDependency */,
 			);
-			name = "Green LightUITests";
+			name = GreenLightUITests;
 			productName = "Green LightUITests";
-			productReference = 524F8FC12876544600D8D70B /* Green LightUITests.xctest */;
+			productReference = 524F8FC12876544600D8D70B /* GreenLightUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -413,7 +413,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 524F8FA22876544400D8D70B /* Build configuration list for PBXProject "Green Light" */;
+			buildConfigurationList = 524F8FA22876544400D8D70B /* Build configuration list for PBXProject "GreenLight" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -426,11 +426,11 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				524F8FA62876544400D8D70B /* Green Light */,
-				524F8FB62876544600D8D70B /* Green LightTests */,
-				524F8FC02876544600D8D70B /* Green LightUITests */,
-				521D5C3028A6E5E900C25191 /* GreenLightUI */,
-				521D5C3928A6E5E900C25191 /* GreenLightUITests */,
+				524F8FA62876544400D8D70B /* GreenLight */,
+				524F8FB62876544600D8D70B /* GreenLightTests */,
+				524F8FC02876544600D8D70B /* GreenLightUITests */,
+				521D5C3028A6E5E900C25191 /* GreenLightKit */,
+				521D5C3928A6E5E900C25191 /* GreenLightKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -558,27 +558,27 @@
 /* Begin PBXTargetDependency section */
 		521D5C3D28A6E5E900C25191 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 521D5C3028A6E5E900C25191 /* GreenLightUI */;
+			target = 521D5C3028A6E5E900C25191 /* GreenLightKit */;
 			targetProxy = 521D5C3C28A6E5E900C25191 /* PBXContainerItemProxy */;
 		};
 		521D5C3F28A6E5E900C25191 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 524F8FA62876544400D8D70B /* Green Light */;
+			target = 524F8FA62876544400D8D70B /* GreenLight */;
 			targetProxy = 521D5C3E28A6E5E900C25191 /* PBXContainerItemProxy */;
 		};
 		521D5C4528A6E5E900C25191 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 521D5C3028A6E5E900C25191 /* GreenLightUI */;
+			target = 521D5C3028A6E5E900C25191 /* GreenLightKit */;
 			targetProxy = 521D5C4428A6E5E900C25191 /* PBXContainerItemProxy */;
 		};
 		524F8FB92876544600D8D70B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 524F8FA62876544400D8D70B /* Green Light */;
+			target = 524F8FA62876544400D8D70B /* GreenLight */;
 			targetProxy = 524F8FB82876544600D8D70B /* PBXContainerItemProxy */;
 		};
 		524F8FC32876544600D8D70B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 524F8FA62876544400D8D70B /* Green Light */;
+			target = 524F8FA62876544400D8D70B /* GreenLight */;
 			targetProxy = 524F8FC22876544600D8D70B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -661,7 +661,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Green Light.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Green Light";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GreenLight.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GreenLight";
 			};
 			name = Debug;
 		};
@@ -680,7 +680,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Green Light.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Green Light";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GreenLight.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GreenLight";
 			};
 			name = Release;
 		};
@@ -874,7 +874,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Green Light.app/Green Light";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GreenLight.app/GreenLight";
 			};
 			name = Debug;
 		};
@@ -894,7 +894,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Green Light.app/Green Light";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GreenLight.app/GreenLight";
 			};
 			name = Release;
 		};
@@ -937,7 +937,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		521D5C4D28A6E5E900C25191 /* Build configuration list for PBXNativeTarget "GreenLightUI" */ = {
+		521D5C4D28A6E5E900C25191 /* Build configuration list for PBXNativeTarget "GreenLightKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				521D5C4928A6E5E900C25191 /* Debug */,
@@ -946,7 +946,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		521D5C4E28A6E5E900C25191 /* Build configuration list for PBXNativeTarget "GreenLightUITests" */ = {
+		521D5C4E28A6E5E900C25191 /* Build configuration list for PBXNativeTarget "GreenLightKitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				521D5C4B28A6E5E900C25191 /* Debug */,
@@ -955,7 +955,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		524F8FA22876544400D8D70B /* Build configuration list for PBXProject "Green Light" */ = {
+		524F8FA22876544400D8D70B /* Build configuration list for PBXProject "GreenLight" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				524F8FC92876544600D8D70B /* Debug */,
@@ -964,7 +964,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		524F8FCB2876544600D8D70B /* Build configuration list for PBXNativeTarget "Green Light" */ = {
+		524F8FCB2876544600D8D70B /* Build configuration list for PBXNativeTarget "GreenLight" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				524F8FCC2876544600D8D70B /* Debug */,
@@ -973,7 +973,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		524F8FCE2876544600D8D70B /* Build configuration list for PBXNativeTarget "Green LightTests" */ = {
+		524F8FCE2876544600D8D70B /* Build configuration list for PBXNativeTarget "GreenLightTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				524F8FCF2876544600D8D70B /* Debug */,
@@ -982,7 +982,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		524F8FD12876544600D8D70B /* Build configuration list for PBXNativeTarget "Green LightUITests" */ = {
+		524F8FD12876544600D8D70B /* Build configuration list for PBXNativeTarget "GreenLightUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				524F8FD22876544600D8D70B /* Debug */,
