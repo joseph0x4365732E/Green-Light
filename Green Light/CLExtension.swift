@@ -9,10 +9,10 @@ import Foundation
 import CoreLocation
 import Spatial
 
-let earthRadius = 6_371_000.0
+public let earthRadius = 6_371_000.0
 
-extension CLLocationCoordinate2D {
-    public init(radiusFeet: CLLocationDistance, theta: CLLocationDirection, relativeTo: CLLocationCoordinate2D) {
+public extension CLLocationCoordinate2D {
+    init(radiusFeet: CLLocationDistance, theta: CLLocationDirection, relativeTo: CLLocationCoordinate2D) {
         
         let radiusEarthDeg = meters(fromFT: radiusFeet) / earthRadius * 180 / .pi
         
@@ -45,8 +45,14 @@ extension CLLocationCoordinate2D {
         return CLLocationCoordinate2D(latitude: latitude + deltaLat, longitude: longitude + deltaLong)
     }
     
-    func offset(latFeet: CLLocationDistance, longFeet: CLLocationDistance) -> CLLocationCoordinate2D {
+    func offset(latFeet: Double, longFeet: Double) -> CLLocationCoordinate2D {
         offset(latMeters: meters(fromFT: latFeet), longMeters: meters(fromFT: longFeet))
+    }
+    
+    func offset(direction: CLLocationDirection, distance: CLLocationDistance) -> CLLocationCoordinate2D {
+        let deltaLat = distance * sin(direction * .pi / 180)
+        let deltaLong = distance * cos(direction * .pi / 180)
+        return offset(latMeters: deltaLat, longMeters: deltaLong)
     }
     
     func mirroredAcross(lat: CLLocationDegrees) -> CLLocationCoordinate2D {
@@ -93,7 +99,7 @@ extension CLLocationCoordinate2D: Hashable {
     }
 }
 
-extension Point3D {
+public extension Point3D {
     init(latitude: Double, longitude: Double, radius: Double) {
         let pitch = latitude * .pi / 180
         var x = radius * cos(pitch)
@@ -107,7 +113,7 @@ extension Point3D {
     }
 }
 
-extension Array {
+public extension Array {
     func mergingPairs<A>(by merger: (Element, Element) -> (A)) -> [A] {
         var result = [Element]()
         let countMinus1 = count - 1
@@ -120,7 +126,7 @@ extension Array {
     }
 }
 
-extension Array where Element == CLLocationCoordinate2D {
+public extension Array where Element == CLLocationCoordinate2D {
     var distances: [CLLocationDistance] {
         mergingPairs { lhs, rhs in
             lhs.distance(to: rhs)
@@ -134,7 +140,7 @@ extension Array where Element == CLLocationCoordinate2D {
     }
 }
 
-extension Array where Element == Double {
+public extension Array where Element == Double {
     var cumulativeSum: [Double] {
         var result = [Double]()
         result.reserveCapacity(count)
@@ -170,4 +176,4 @@ extension Array where Element == Double {
 }
 
 /// Acceleration, measured in m/s^2
-typealias CLLocationAcceleration = Double
+public typealias CLLocationAcceleration = Double

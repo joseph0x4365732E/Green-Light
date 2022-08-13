@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "MapView.updateUIView(_:context:):MapView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "mapView.overlays">
+            </PersistentString>
+            <PersistentString
+               value = "mapView == view">
+            </PersistentString>
+            <PersistentString
+               value = "region.span.latitudeDelta * 100">
+            </PersistentString>
+            <PersistentString
+               value = "view.overlays">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in variable initialization expression of houghtonAndStine:IntersectionView.swift">
+      </ContextState>
+      <ContextState
+         contextName = "IntersectionView.toggleZoom():IntersectionView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "plotMeters">
+            </PersistentString>
+            <PersistentString
+               value = "zoomedIn">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Intersection.init(region:bounds:):IntersectionView.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

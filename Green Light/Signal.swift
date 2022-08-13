@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Signal {
+public struct Signal {
     let lights: [Light]
     let roads: [Road]
     private var lightsIndexByRoad: [Road: Int] = [:]
@@ -15,34 +15,33 @@ struct Signal {
     var maxYellowTime: TimeInterval {
         roads.map { $0.yellowLightDuration }.max()!
     }
-    
-    // transition
-    
-    // func transition
-    
-    /// Helper function for init
-    private mutating func check(roads r: [Road], lights l: [Light]) -> [Road: Int] {
-        let uniqueRoadCount = Set(r).count
-        let uniqueLightCount = Set(r).count
-        assert(r.count == uniqueRoadCount, "Repeated Roads: Only \(uniqueRoadCount) of the \(r.count) roads are unique.")
-        assert(l.count == uniqueLightCount, "Repeated lights: Only \(uniqueLightCount) of the \(l.count) lights are unique.")
-        assert(r.count == l.count, "Invalid Signal: Different number of roads (\(r.count)) and lights (\(l.count)).")
-        return Dictionary<Road, Int>(uniqueKeysWithValues: zip(roads, lights.indices))
+    var lightsByRoad: [Road:Light] {
+        Dictionary(uniqueKeysWithValues: zip(roads, lights))
     }
+    var allRed: SignalState { SignalState(allRedCount: lights.count) }
     
-    init(lights: [Light], roads: [Road], lightsIndexByRoad: [Road : Int], roadCombinations: [[Road]]) {
+    init(lights: [Light], roads: [Road], roadCombinations: [[Road]]) {
         self.lights = lights
         self.roads = roads
         let numRoads = roads.count
-        self.boolCombinations = roadCombinations.map { movingRoads in
+        
+        let uniqueRoadCount = Set(roads).count
+        let uniqueLightCount = Set(roads).count
+        assert(roads.count == uniqueRoadCount, "Repeated Roads: Only \(uniqueRoadCount) of the \(roads.count) roads are unique.")
+        assert(lights.count == uniqueLightCount, "Repeated lights: Only \(uniqueLightCount) of the \(lights.count) lights are unique.")
+        assert(roads.count == lights.count, "Invalid Signal: Different number of roads (\(roads.count)) and lights (\(lights.count)).")
+        let localLightsIndex = Dictionary<Road, Int>(uniqueKeysWithValues: zip(roads, lights.indices))
+        self.lightsIndexByRoad = localLightsIndex
+        
+        let boolCombs = roadCombinations.map { movingRoads in
             var roadMovingBools = Array(repeating: false, count: numRoads)
             movingRoads.forEach { movingRoad in
-                let idx = lightsIndexByRoad[movingRoad]!
+                let idx = localLightsIndex[movingRoad]!
                 roadMovingBools[idx] = true
             }
             return SignalBoolean(roadMoving: roadMovingBools)
         }
-        self.lightsIndexByRoad = check(roads: roads, lights: lights)
+        self.boolCombinations = boolCombs
     }
     
     private func checkStateCompatibleWithSignal(state: SignalState) {
@@ -83,7 +82,7 @@ struct Signal {
     }
 }
 
-struct SignalBoolean {
+public struct SignalBoolean {
     let roadMoving: [Bool]
     var greenRed: [LightColor] {
         roadMoving.map { isMoving in
@@ -92,13 +91,23 @@ struct SignalBoolean {
     }
 }
 
-struct SignalState {
+public struct SignalState {
     var colors: [LightColor]
     var yellowCountdown: TimeInterval
     var hasYellow: Bool { colors.contains([.yellow]) }
     
     var roadMovingBooleans: [Bool] { colors.map { $0 != .red } }
     var signalBoolean: SignalBoolean { SignalBoolean(roadMoving: roadMovingBooleans) }
+    
+    init(colors: [LightColor], yellowCountdown: TimeInterval) {
+        self.colors = colors
+        self.yellowCountdown = yellowCountdown
+    }
+    
+    init(allRedCount: Int) {
+        colors = Array(repeating: .red, count: allRedCount)
+        yellowCountdown = 0
+    }
     
     func advanced(byTime dt: TimeInterval) -> SignalState {
         let newColors: [LightColor]

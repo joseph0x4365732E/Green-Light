@@ -8,7 +8,7 @@
 import Foundation
 import MapKit
 
-struct ColorPolyline {
+public struct ColorPolyline {
     var polyline: MKPolyline
     var color: UIColor
 }

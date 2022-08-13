@@ -8,14 +8,14 @@
 import Foundation
 import CoreLocation
 
-struct Light: Hashable {
-    static func == (lhs: Light, rhs: Light) -> Bool { lhs.location == rhs.location }
-    func hash(into hasher: inout Hasher) { hasher.combine(location) }
+public struct Light: Hashable {
+    public static func == (lhs: Light, rhs: Light) -> Bool { lhs.location == rhs.location }
+    public func hash(into hasher: inout Hasher) { hasher.combine(location) }
     
     var location: CLLocationCoordinate2D
 }
 
-enum LightColor {
+public enum LightColor {
     case green
     case yellow
     case red

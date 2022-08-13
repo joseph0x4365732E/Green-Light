@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct LightView: View {
-    var body: some View {
+public struct LightView: View {
+    public var body: some View {
         VStack(spacing: 2.4) {
             Circle()
                 .foregroundColor(.red)

@@ -9,7 +9,7 @@ import SwiftUI
 import MapKit
 
 // MARK: MP ViewRepresentable
-struct MapView: UIViewRepresentable {
+public struct MapView: UIViewRepresentable {
     @Binding var region: MKCoordinateRegion
     @Binding var mapType: MKMapType
     @Binding var overlays: [MKOverlay]
@@ -20,7 +20,7 @@ struct MapView: UIViewRepresentable {
     }
     @Binding var annotations: [MKAnnotation]
     
-    func makeUIView(context: Context) -> MKMapView {
+    public func makeUIView(context: Context) -> MKMapView {
         let mapView = MKMapView()
         mapView.delegate = context.coordinator
         mapView.region = region
@@ -30,18 +30,18 @@ struct MapView: UIViewRepresentable {
         return mapView
     }
     
-    func updateUIView(_ view: MKMapView, context: Context) {
+    public func updateUIView(_ view: MKMapView, context: Context) {
         view.setRegion(region, animated: true)
         view.mapType = mapType
     }
     
-    func makeCoordinator() -> Coordinator {
+    public func makeCoordinator() -> Coordinator {
         Coordinator(self)
     }
 }
 
 // MARK: Coordinator
-class Coordinator: NSObject, MKMapViewDelegate {
+public class Coordinator: NSObject, MKMapViewDelegate {
     var myMap: MapView
     var colors: [MKPolyline: UIColor]
     
@@ -55,7 +55,7 @@ class Coordinator: NSObject, MKMapViewDelegate {
         }
     }
     
-    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+    public func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         if let roadPolyline = overlay as? MKPolyline {
             let renderer = MKPolylineRenderer(polyline: roadPolyline)
             renderer.strokeColor = colors[roadPolyline]
@@ -69,12 +69,12 @@ class Coordinator: NSObject, MKMapViewDelegate {
         return MKOverlayRenderer()
     }
     
-    func mapViewDidChangeVisibleRegion(_ mapView: MKMapView) {
+    public func mapViewDidChangeVisibleRegion(_ mapView: MKMapView) {
         myMap.region = mapView.region
     }
     
     //https://www.youtube.com/watch?v=DHpL8yz6ot0
-    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+    public func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         guard !(annotation is MKUserLocation) else {
             return nil
         }

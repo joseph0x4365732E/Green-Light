@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/josephcestone/Documents/1_Xcode/Green Light/Green Light.xcodeproj">
+      location = "group:">
    </FileRef>
 </Workspace>

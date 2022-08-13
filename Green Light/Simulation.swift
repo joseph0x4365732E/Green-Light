@@ -8,23 +8,40 @@
 import Foundation
 import CoreLocation
 
-class Simulation {
+public class Simulation {
     static let timeTick: TimeInterval = 0.1
     static let forwardLookingTime: TimeInterval = 10
     
     var intersection: Intersection // Roads, bounds - static
     var signal: Signal
-    var slices: [TimeSlice] = []
     var computer: SignalComputer
+    var runTime: TimeInterval
+    var slices: [TimeSlice]
+    var hasRun: Bool = false
     
-    init(intersection: Intersection, signal: Signal, computer: SignalComputer) {
+    init(intersection: Intersection, signal: Signal, computer: SignalComputer, runTime: TimeInterval, initialSlice: TimeSlice) {
         self.intersection = intersection
         self.signal = signal
         self.computer = computer
+        assert(runTime > Simulation.timeTick, "Simuation runtime too short: Runtime \(runTime) is less than Simulation.timeTick of \(Simulation.timeTick).")
+        self.runTime = runTime
+        self.slices = [initialSlice]
+    }
+    
+    func run() {
+        let numSlices = Int(runTime / Simulation.timeTick)
+        guard !hasRun else { return }
+        var previousSlice = slices.first!
+        slices = (0..<numSlices).map { _ in
+            let nextSignalState = computer.nextSignal(after: previousSlice)
+            previousSlice = previousSlice.advanced(byTime: Simulation.timeTick, given: nextSignalState, at: signal)
+            return previousSlice
+        }
+        hasRun = true
     }
 }
 
-struct TimeSlice {
+public struct TimeSlice {
     var routeSlices: [RouteSlice]
     var signalState: SignalState
     
@@ -41,18 +58,18 @@ struct TimeSlice {
     }
 }
 
-protocol SignalComputer {
+public protocol SignalComputer {
     func nextSignal(after slice: TimeSlice) -> SignalState
 }
 
-class MaxFwdAccComputer: SignalComputer {
+public class MaxFwdAccComputer: SignalComputer {
     var signal: Signal
     
     init(signal: Signal) {
         self.signal = signal
     }
     
-    func nextSignal(after slice: TimeSlice) -> SignalState {
+    public func nextSignal(after slice: TimeSlice) -> SignalState {
         let numSlices = Int(Simulation.forwardLookingTime / Simulation.timeTick)
         
         let branches:[[TimeSlice]] = signal.possibleStates(following: slice.signalState).map { signalState in

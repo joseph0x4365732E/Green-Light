@@ -8,7 +8,7 @@
 import Foundation
 import CoreLocation
 
-struct Car {
+public struct Car {
     //MARK: Vars
     /// How far along the road
     var position: CLLocationDistance

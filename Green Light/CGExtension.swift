@@ -7,13 +7,13 @@
 
 import Foundation
 
-extension CGPoint {
+public extension CGPoint {
     func offset(deltaX: CGFloat, deltaY: CGFloat) -> CGPoint {
         CGPoint(x: x + deltaX, y: y + deltaY)
     }
 }
 
-extension CGRect {
+public extension CGRect {
     init(pt1: CGPoint, pt2: CGPoint) {
         let width = abs(pt2.x - pt1.x)
         let height = abs(pt2.y - pt1.y)

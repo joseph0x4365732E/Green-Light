@@ -11,7 +11,7 @@ import SwiftUI
 struct Green_LightApp: App {
     var body: some Scene {
         WindowGroup {
-            IntersectionView(intersection: houghtonAndStine)
+            SimulationView(simulationPlayer: SimulationPlayer(simulation: createHSSimulation(), time: 0))
         }
     }
 }

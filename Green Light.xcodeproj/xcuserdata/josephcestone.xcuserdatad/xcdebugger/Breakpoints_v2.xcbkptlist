@@ -1,0 +1,980 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "FF39ADBA-88C1-4D45-A0EC-B9AF70FB56CB"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2AD9A796-04DD-423C-8747-AD82A472CB55"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Green Light/Simulation.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "run()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2AD9A796-04DD-423C-8747-AD82A472CB55 - 645fd2cc8116c4e8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Green_Light.Simulation.run() -&gt; ()"
+                  moduleName = "Green Light"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/Simulation.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "564">
+               </Location>
+               <Location
+                  uuid = "2AD9A796-04DD-423C-8747-AD82A472CB55 - 2d35d6c97581e59b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GreenLightUI.Simulation.run() -&gt; ()"
+                  moduleName = "GreenLightUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/Simulation.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "564">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "297C35F6-F53C-4181-8ED8-A4E930D094E7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Green Light/HoughtonAndStine.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "createHSSimulation()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "297C35F6-F53C-4181-8ED8-A4E930D094E7 - 808c696490cd45f7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Green_Light.createHSSimulation() -&gt; Green_Light.Simulation"
+                  moduleName = "Green Light"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/HoughtonAndStine.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "297C35F6-F53C-4181-8ED8-A4E930D094E7 - ba9b9ac58c1fd1f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GreenLightUI.createHSSimulation() -&gt; GreenLightUI.Simulation"
+                  moduleName = "GreenLightUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/HoughtonAndStine.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "92">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A571499E-C046-49C4-ADC2-FD6CF77E1C24"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Green Light/HoughtonAndStine.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "createHSSimulation()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "A571499E-C046-49C4-ADC2-FD6CF77E1C24 - 808c696490cd5a10"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Green_Light.createHSSimulation() -&gt; Green_Light.Simulation"
+                  moduleName = "Green Light"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/HoughtonAndStine.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "97"
+                  endingLineNumber = "97"
+                  offsetFromSymbolStart = "592">
+               </Location>
+               <Location
+                  uuid = "A571499E-C046-49C4-ADC2-FD6CF77E1C24 - ba9b9ac58c1fce17"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GreenLightUI.createHSSimulation() -&gt; GreenLightUI.Simulation"
+                  moduleName = "GreenLightUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/HoughtonAndStine.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "97"
+                  endingLineNumber = "97"
+                  offsetFromSymbolStart = "592">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B68EFEFF-CF00-4354-BFC3-F815A2AAC0DB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Green Light/HoughtonAndStine.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
+            landmarkName = "createHSSimulation()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "B68EFEFF-CF00-4354-BFC3-F815A2AAC0DB - 808c696490cd5b2a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Green_Light.createHSSimulation() -&gt; Green_Light.Simulation"
+                  moduleName = "Green Light"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/HoughtonAndStine.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "103"
+                  endingLineNumber = "103"
+                  offsetFromSymbolStart = "972">
+               </Location>
+               <Location
+                  uuid = "B68EFEFF-CF00-4354-BFC3-F815A2AAC0DB - ba9b9ac58c1fcf2d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GreenLightUI.createHSSimulation() -&gt; GreenLightUI.Simulation"
+                  moduleName = "GreenLightUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/HoughtonAndStine.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "103"
+                  endingLineNumber = "103"
+                  offsetFromSymbolStart = "972">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CB2EB175-425E-4FFD-909E-3D550CAEB1C7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Green Light/HoughtonAndStine.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "createHSSignal()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "CB2EB175-425E-4FFD-909E-3D550CAEB1C7 - 81ee2f00513ddcfd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Green_Light.createHSSignal() -&gt; Green_Light.Signal"
+                  moduleName = "Green Light"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/HoughtonAndStine.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "CB2EB175-425E-4FFD-909E-3D550CAEB1C7 - 919217114cd986fa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GreenLightUI.createHSSignal() -&gt; GreenLightUI.Signal"
+                  moduleName = "GreenLightUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/HoughtonAndStine.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2A51D37F-DD8D-4B98-840B-C92CBD9080AB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Green Light/HoughtonAndStine.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "2A51D37F-DD8D-4B98-840B-C92CBD9080AB - c04da9434b83e090"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; Swift.Array&lt;__C.CLLocationCoordinate2D&gt; in variable initialization expression of Green_Light.houghtonAndStine : Green_Light.Intersection"
+                  moduleName = "Green Light"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/HoughtonAndStine.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "172">
+               </Location>
+               <Location
+                  uuid = "2A51D37F-DD8D-4B98-840B-C92CBD9080AB - e230420aa1b85330"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; Swift.Array&lt;__C.CLLocationCoordinate2D&gt; in variable initialization expression of GreenLightUI.houghtonAndStine : GreenLightUI.Intersection"
+                  moduleName = "GreenLightUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/HoughtonAndStine.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "172">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6886E254-3A32-4DF3-9D54-DC59CBE8D2D8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Green Light/HoughtonAndStine.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "createHSRoads()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "6886E254-3A32-4DF3-9D54-DC59CBE8D2D8 - 16163dff67b02645"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Green_Light.createHSRoads() -&gt; (Green_Light.Road, Green_Light.Road)"
+                  moduleName = "Green Light"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/HoughtonAndStine.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "6886E254-3A32-4DF3-9D54-DC59CBE8D2D8 - 2d9ed5c95f2debb2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GreenLightUI.createHSRoads() -&gt; (GreenLightUI.Road, GreenLightUI.Road)"
+                  moduleName = "GreenLightUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/HoughtonAndStine.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ED4C44EA-99C1-4051-AF40-C292AF9664EC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Green Light/HoughtonAndStine.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "createHSRoads()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "ED4C44EA-99C1-4051-AF40-C292AF9664EC - 16163dff67b027e0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Green_Light.createHSRoads() -&gt; (Green_Light.Road, Green_Light.Road)"
+                  moduleName = "Green Light"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/HoughtonAndStine.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "ED4C44EA-99C1-4051-AF40-C292AF9664EC - 37befefcce3f67"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; Swift.Array&lt;__C.CLLocationCoordinate2D&gt; in Green_Light.createHSRoads() -&gt; (Green_Light.Road, Green_Light.Road)"
+                  moduleName = "Green Light"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/HoughtonAndStine.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "ED4C44EA-99C1-4051-AF40-C292AF9664EC - 2d9ed5c95f2dea17"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GreenLightUI.createHSRoads() -&gt; (GreenLightUI.Road, GreenLightUI.Road)"
+                  moduleName = "GreenLightUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/HoughtonAndStine.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "ED4C44EA-99C1-4051-AF40-C292AF9664EC - 13f9300273638037"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; Swift.Array&lt;__C.CLLocationCoordinate2D&gt; in GreenLightUI.createHSRoads() -&gt; (GreenLightUI.Road, GreenLightUI.Road)"
+                  moduleName = "GreenLightUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/HoughtonAndStine.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "368434C4-314D-47C6-A1BE-60B6F8FC34B6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Green Light/HoughtonAndStine.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "createHSRoads()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "368434C4-314D-47C6-A1BE-60B6F8FC34B6 - 16163dff67b0270b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Green_Light.createHSRoads() -&gt; (Green_Light.Road, Green_Light.Road)"
+                  moduleName = "Green Light"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/HoughtonAndStine.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "268">
+               </Location>
+               <Location
+                  uuid = "368434C4-314D-47C6-A1BE-60B6F8FC34B6 - 2db517584e019e4f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; Swift.Array&lt;__C.CLLocationCoordinate2D&gt; in Green_Light.createHSRoads() -&gt; (Green_Light.Road, Green_Light.Road)"
+                  moduleName = "Green Light"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/HoughtonAndStine.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "368434C4-314D-47C6-A1BE-60B6F8FC34B6 - 2d9ed5c95f2deafc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GreenLightUI.createHSRoads() -&gt; (GreenLightUI.Road, GreenLightUI.Road)"
+                  moduleName = "GreenLightUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/HoughtonAndStine.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "268">
+               </Location>
+               <Location
+                  uuid = "368434C4-314D-47C6-A1BE-60B6F8FC34B6 - a7bbd0ec97f83915"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; Swift.Array&lt;__C.CLLocationCoordinate2D&gt; in GreenLightUI.createHSRoads() -&gt; (GreenLightUI.Road, GreenLightUI.Road)"
+                  moduleName = "GreenLightUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/HoughtonAndStine.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "72FC907C-852E-485F-BBED-9D5725F79FE6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Green Light/HoughtonAndStine.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "createHSRoads()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "72FC907C-852E-485F-BBED-9D5725F79FE6 - 16163dff67b02835"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Green_Light.createHSRoads() -&gt; (Green_Light.Road, Green_Light.Road)"
+                  moduleName = "Green Light"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/HoughtonAndStine.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "372">
+               </Location>
+               <Location
+                  uuid = "72FC907C-852E-485F-BBED-9D5725F79FE6 - 2d9ed5c95f2de5c2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GreenLightUI.createHSRoads() -&gt; (GreenLightUI.Road, GreenLightUI.Road)"
+                  moduleName = "GreenLightUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/HoughtonAndStine.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "372">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "12B1BF15-E7A0-4571-8F76-8DF699C62290"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Green Light/HoughtonAndStine.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "12B1BF15-E7A0-4571-8F76-8DF699C62290 - c04da9434b83e269"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; Swift.Array&lt;__C.CLLocationCoordinate2D&gt; in variable initialization expression of Green_Light.houghtonAndStine : Green_Light.Intersection"
+                  moduleName = "Green Light"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/HoughtonAndStine.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "440">
+               </Location>
+               <Location
+                  uuid = "12B1BF15-E7A0-4571-8F76-8DF699C62290 - e230420aa1b851c9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; Swift.Array&lt;__C.CLLocationCoordinate2D&gt; in variable initialization expression of GreenLightUI.houghtonAndStine : GreenLightUI.Intersection"
+                  moduleName = "GreenLightUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/HoughtonAndStine.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "440">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "73402DE6-431D-46FB-AFEA-18884342D4E9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Green Light/HoughtonAndStine.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "73402DE6-431D-46FB-AFEA-18884342D4E9 - c04da9434b83e2c6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; Swift.Array&lt;__C.CLLocationCoordinate2D&gt; in variable initialization expression of Green_Light.houghtonAndStine : Green_Light.Intersection"
+                  moduleName = "Green Light"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/HoughtonAndStine.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "648">
+               </Location>
+               <Location
+                  uuid = "73402DE6-431D-46FB-AFEA-18884342D4E9 - e230420aa1b85166"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; Swift.Array&lt;__C.CLLocationCoordinate2D&gt; in variable initialization expression of GreenLightUI.houghtonAndStine : GreenLightUI.Intersection"
+                  moduleName = "GreenLightUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/HoughtonAndStine.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "648">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "833B19C6-D13A-4B38-90C1-AB4C1B4BB8C8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Green Light/Intersection.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "line(from:to:resolution:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "833B19C6-D13A-4B38-90C1-AB4C1B4BB8C8 - ca35e3b84dee9b30"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Green_Light.line(from: __C.CLLocationCoordinate2D, to: __C.CLLocationCoordinate2D, resolution: Swift.Double) -&gt; Swift.Array&lt;__C.CLLocationCoordinate2D&gt;"
+                  moduleName = "Green Light"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/Intersection.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "105"
+                  endingLineNumber = "105"
+                  offsetFromSymbolStart = "196">
+               </Location>
+               <Location
+                  uuid = "833B19C6-D13A-4B38-90C1-AB4C1B4BB8C8 - 2a426572fc64a290"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GreenLightUI.line(from: __C.CLLocationCoordinate2D, to: __C.CLLocationCoordinate2D, resolution: Swift.Double) -&gt; Swift.Array&lt;__C.CLLocationCoordinate2D&gt;"
+                  moduleName = "GreenLightUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/Intersection.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "105"
+                  endingLineNumber = "105"
+                  offsetFromSymbolStart = "196">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "714E78C8-7C99-4BB1-A836-DDC5ADC7792F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Green Light/Intersection.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
+            landmarkName = "line(from:to:resolution:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "714E78C8-7C99-4BB1-A836-DDC5ADC7792F - ca35e3b84dee996f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Green_Light.line(from: __C.CLLocationCoordinate2D, to: __C.CLLocationCoordinate2D, resolution: Swift.Double) -&gt; Swift.Array&lt;__C.CLLocationCoordinate2D&gt;"
+                  moduleName = "Green Light"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/Intersection.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "118"
+                  endingLineNumber = "118"
+                  offsetFromSymbolStart = "1036">
+               </Location>
+               <Location
+                  uuid = "714E78C8-7C99-4BB1-A836-DDC5ADC7792F - 2a426572fc64a0cf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GreenLightUI.line(from: __C.CLLocationCoordinate2D, to: __C.CLLocationCoordinate2D, resolution: Swift.Double) -&gt; Swift.Array&lt;__C.CLLocationCoordinate2D&gt;"
+                  moduleName = "GreenLightUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/Intersection.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "118"
+                  endingLineNumber = "118"
+                  offsetFromSymbolStart = "1036">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "61641394-3E25-49AD-9ED6-0ACACECA48E3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Green Light/Road.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "init(name:speedLimit:stopLineDistance:points:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "61641394-3E25-49AD-9ED6-0ACACECA48E3 - 416e74a0d992dfe3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Green_Light.Road.init(name: Swift.String, speedLimit: Swift.Double, stopLineDistance: Swift.Double, points: Swift.Array&lt;__C.CLLocationCoordinate2D&gt;) -&gt; Green_Light.Road"
+                  moduleName = "Green Light"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/Road.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "404">
+               </Location>
+               <Location
+                  uuid = "61641394-3E25-49AD-9ED6-0ACACECA48E3 - a061807c2e50a2c9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GreenLightUI.Road.init(name: Swift.String, speedLimit: Swift.Double, stopLineDistance: Swift.Double, points: Swift.Array&lt;__C.CLLocationCoordinate2D&gt;) -&gt; GreenLightUI.Road"
+                  moduleName = "GreenLightUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/Road.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "404">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "547F8E14-0189-4D74-B8D3-1AB54C601BEB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Green Light/Road.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "init(name:speedLimit:stopLineDistance:points:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "547F8E14-0189-4D74-B8D3-1AB54C601BEB - 416e74a0d992df82"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Green_Light.Road.init(name: Swift.String, speedLimit: Swift.Double, stopLineDistance: Swift.Double, points: Swift.Array&lt;__C.CLLocationCoordinate2D&gt;) -&gt; Green_Light.Road"
+                  moduleName = "Green Light"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/Road.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "552">
+               </Location>
+               <Location
+                  uuid = "547F8E14-0189-4D74-B8D3-1AB54C601BEB - a061807c2e50a2a8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GreenLightUI.Road.init(name: Swift.String, speedLimit: Swift.Double, stopLineDistance: Swift.Double, points: Swift.Array&lt;__C.CLLocationCoordinate2D&gt;) -&gt; GreenLightUI.Road"
+                  moduleName = "GreenLightUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/Road.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "552">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8F87F720-5129-402E-8D12-EE7F65B5D7B5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Green Light/Road.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "init(name:speedLimit:stopLineDistance:points:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8F87F720-5129-402E-8D12-EE7F65B5D7B5 - 416e74a0d992dfad"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Green_Light.Road.init(name: Swift.String, speedLimit: Swift.Double, stopLineDistance: Swift.Double, points: Swift.Array&lt;__C.CLLocationCoordinate2D&gt;) -&gt; Green_Light.Road"
+                  moduleName = "Green Light"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/Road.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "604">
+               </Location>
+               <Location
+                  uuid = "8F87F720-5129-402E-8D12-EE7F65B5D7B5 - a061807c2e50a287"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GreenLightUI.Road.init(name: Swift.String, speedLimit: Swift.Double, stopLineDistance: Swift.Double, points: Swift.Array&lt;__C.CLLocationCoordinate2D&gt;) -&gt; GreenLightUI.Road"
+                  moduleName = "GreenLightUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/Road.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "604">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7A4AC9BF-4AAC-4DE9-87B4-B25CCE5752EA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Green Light/HoughtonAndStine.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "createHSSimulation()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "7A4AC9BF-4AAC-4DE9-87B4-B25CCE5752EA - 808c696490cd5b09"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Green_Light.createHSSimulation() -&gt; Green_Light.Simulation"
+                  moduleName = "Green Light"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/HoughtonAndStine.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "104"
+                  endingLineNumber = "104"
+                  offsetFromSymbolStart = "1236">
+               </Location>
+               <Location
+                  uuid = "7A4AC9BF-4AAC-4DE9-87B4-B25CCE5752EA - ba9b9ac58c1fcf0e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GreenLightUI.createHSSimulation() -&gt; GreenLightUI.Simulation"
+                  moduleName = "GreenLightUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/HoughtonAndStine.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "104"
+                  endingLineNumber = "104"
+                  offsetFromSymbolStart = "1236">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5111B5FF-E189-4EC8-8E97-0862EDF6A938"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Green Light/HoughtonAndStine.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "5111B5FF-E189-4EC8-8E97-0862EDF6A938 - c04da9434b83e4f4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; Swift.Array&lt;__C.CLLocationCoordinate2D&gt; in variable initialization expression of Green_Light.houghtonAndStine : Green_Light.Intersection"
+                  moduleName = "Green Light"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/HoughtonAndStine.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "1500">
+               </Location>
+               <Location
+                  uuid = "5111B5FF-E189-4EC8-8E97-0862EDF6A938 - e230420aa1b85754"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; Swift.Array&lt;__C.CLLocationCoordinate2D&gt; in variable initialization expression of GreenLightUI.houghtonAndStine : GreenLightUI.Intersection"
+                  moduleName = "GreenLightUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephcestone/Documents/1_Xcode/Green%20Light/Green%20Light/HoughtonAndStine.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "1500">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

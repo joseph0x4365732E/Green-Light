@@ -8,7 +8,7 @@
 import Foundation
 import CoreLocation
 
-class RouteSlice {
+public class RouteSlice {
     var road: Road
     var carsOldestFirst: [Car]
     
@@ -24,7 +24,8 @@ class RouteSlice {
     func advanced(byTime dt: TimeInterval, watching lightColor: LightColor) -> RouteSlice {
         var lastCar: Car? = nil
         let newCars = carsOldestFirst.map { car in
-            car.advanced(byTime: Simulation.timeTick, on: road, behind: lastCar, watching: lightColor)
+            lastCar = car.advanced(byTime: Simulation.timeTick, on: road, behind: lastCar, watching: lightColor)
+            return lastCar!
         }
         return RouteSlice(road: road, carsOldestFirst: newCars)
     }

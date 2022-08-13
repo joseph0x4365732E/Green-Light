@@ -9,11 +9,11 @@ import Foundation
 import MapKit
 
 //https://stackoverflow.com/questions/34857515/how-do-i-create-an-image-overlay-and-add-to-mkmapview-in-swift-2
-class ImageOverlay : NSObject, MKOverlay {
+public class ImageOverlay : NSObject, MKOverlay {
     let image:UIImage
-    let coordinate: CLLocationCoordinate2D
+    public let coordinate: CLLocationCoordinate2D
     let direction: CLLocationDirection
-    var boundingMapRect: MKMapRect
+    public var boundingMapRect: MKMapRect
     let widthFeet: Double
     let heightFeet: Double
     
@@ -37,8 +37,8 @@ class ImageOverlay : NSObject, MKOverlay {
     }
 }
 
-class ImageOverlayRenderer : MKOverlayRenderer {
-    override func draw(_ mapRect: MKMapRect, zoomScale: MKZoomScale, in context: CGContext) {
+public class ImageOverlayRenderer : MKOverlayRenderer {
+    public override func draw(_ mapRect: MKMapRect, zoomScale: MKZoomScale, in context: CGContext) {
         // Untransformed
         guard let overlay = self.overlay as? ImageOverlay else {
             return

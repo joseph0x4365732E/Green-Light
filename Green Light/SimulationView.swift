@@ -1,5 +1,5 @@
 //
-//  IntersectionView.swift
+//  SimulationView.swift
 //  Green Light
 //
 //  Created by Joseph Cestone on 7/6/22.
@@ -9,27 +9,31 @@ import SwiftUI
 import MapKit
 
 //https://gist.github.com/shaundon/00be84deb3450e31db90a31d5d5b7adc/raw/d010d68ac08e49f50603d4006ccbb051cc807902/MapView.swift
-struct IntersectionView: View {
+struct SimulationView: View {
     @State var region: MKCoordinateRegion
-    @State var intersection: Intersection
+    @State var simulationPlayer: SimulationPlayer
     @State var zoomedIn = true
     @State var satellite = false
     @State var mapType = MKMapType.standard
-    @State var simRunning = false
+    @State var simPlaying = false
+    var intersection: Intersection { simulationPlayer.intersection }
     
-    init(zoomMeters: CLLocationDistance = zoomedPlotMeters, intersection: Intersection) {
-        self.region = MKCoordinateRegion(center: intersection.center, latitudinalMeters: zoomMeters, longitudinalMeters: zoomMeters)
-        self.intersection = intersection
+    init(zoomMeters: CLLocationDistance = zoomedPlotMeters, simulationPlayer: SimulationPlayer) {
+        self.region = MKCoordinateRegion(center: simulationPlayer.intersection.center, latitudinalMeters: zoomMeters, longitudinalMeters: zoomMeters)
+        self.simulationPlayer = simulationPlayer
     }
     
-    var annotations: [MKAnnotation] = []//[exampleLightAnnotation]
+    var annotations: [MKAnnotation] {
+        simulationPlayer.signal.lightsByRoad.map { (road, light) in
+            LightAnnotation(coordinate: light.location, id: road.name)
+        }
+    }
     var carOverlays: [MKOverlay] {
-        []
-//        intersection.roads.flatMap { road in
-//            road.cars.map { car in
-//                ImageOverlay(car: car) as MKOverlay
-//            }
-//        }
+        simulationPlayer.carsByRoad.flatMap { (road, cars) in
+            cars.map { car in
+                ImageOverlay(car: car, road: road)
+            }
+        }
     }
     
     func toggleZoom() {
@@ -65,7 +69,9 @@ struct IntersectionView: View {
                         Image(systemName: satellite ? "globe.americas.fill" : "map")
                     })
                     divider()
-                    Button(action: {}, label: { Image(systemName: "play") })
+                    Button(action: {
+                        simulationPlayer.simulation.run()
+                    }, label: { Image(systemName: "play") })
                     Spacer()
                 }
                 .imageScale(.large)
@@ -90,7 +96,7 @@ struct IntersectionView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        IntersectionView(intersection: houghtonAndStine)
+        SimulationView(simulationPlayer: SimulationPlayer(simulation: createHSSimulation(), time: 0))
     }
 }
 

@@ -10,34 +10,34 @@ import MapKit
 
 // MARK: Constants
 
-let laneWidth = 12.0
-let lanesWide = 2.0
-let roadWidth = laneWidth * lanesWide
-let laneCenter = laneWidth / 2
-let halfRoad = roadWidth / 2
-let plotDist = 1320.0 // 1/4 Mile
-let stripeWidth = 0.3
-let fullRoadWidth = roadWidth + stripeWidth
-let stripeLength = 1.5
-let stripeSpacing = 6.0
-let teslaWidth = 82.2 / 12
-let teslaLength = 184.8 / 12
-let carSpacing = 24.0
+public let laneWidth = 12.0
+public let lanesWide = 2.0
+public let roadWidth = laneWidth * lanesWide
+public let laneCenter = laneWidth / 2
+public let halfRoad = roadWidth / 2
+public let plotDist = 1320.0 // 1/4 Mile
+public let stripeWidth = 0.3
+public let fullRoadWidth = roadWidth + stripeWidth
+public let stripeLength = 1.5
+public let stripeSpacing = 6.0
+public let teslaWidth = 82.2 / 12
+public let teslaLength = 184.8 / 12
+public let carSpacing = 24.0
 
-let carImage = UIImage(named: "Car")!
+public let carImage = UIImage(named: "Car")!
 
-let plotMeters = meters(fromFT: plotDist)
-let fullPlotMeters = meters(fromFT: 2 * plotDist)
-let satZoomMeters = fullPlotMeters / 4
-let zoomedPlotMeters = fullPlotMeters / 25
+public let plotMeters = meters(fromFT: plotDist)
+public let fullPlotMeters = meters(fromFT: 2 * plotDist)
+public let satZoomMeters = fullPlotMeters / 4
+public let zoomedPlotMeters = fullPlotMeters / 25
 
-let gravity: CLLocationAcceleration = 9.8
-let decelerationGs = 0.4
-let yellowDecelerationRate: CLLocationAcceleration = meters(fromFT: 10)
-let driverReactionTime = 1.0
+public let gravity: CLLocationAcceleration = 9.8
+public let decelerationGs = 0.4
+public let yellowDecelerationRate: CLLocationAcceleration = meters(fromFT: 10)
+public let driverReactionTime = 1.0
 
 // MARK: Intersection
-struct Intersection {
+public struct Intersection {
     var center: CLLocationCoordinate2D
     var roads: [Road]
     var bounds: [CLLocationCoordinate2D]
@@ -80,7 +80,7 @@ struct Intersection {
 
 // MARK: arc()
 
-func arc(radiusFeet: CLLocationDistance, center: CLLocationCoordinate2D, start: CLLocationDirection, end: CLLocationDirection, resolution: CLLocationDistance) -> [CLLocationCoordinate2D] {
+public func arc(radiusFeet: CLLocationDistance, center: CLLocationCoordinate2D, start: CLLocationDirection, end: CLLocationDirection, resolution: CLLocationDistance) -> [CLLocationCoordinate2D] {
     
     let backwards = start > end // goes negative
     
@@ -91,8 +91,7 @@ func arc(radiusFeet: CLLocationDistance, center: CLLocationCoordinate2D, start: 
     let actualResolution = (backwards ? -totalAngle : totalAngle) / Double(numPoints - 1)
     let thetas:[CLLocationDirection] =
     [start] +
-    (2..<numPoints)
-        .map { pointIndex in
+    (2..<numPoints).map { pointIndex in
             start + Double(pointIndex) * actualResolution
         } +
     [end]
@@ -102,6 +101,23 @@ func arc(radiusFeet: CLLocationDistance, center: CLLocationCoordinate2D, start: 
     }
 }
 
-func meters(fromFT feet: Double) -> Double { feet * 0.304800609601 }
+public func line(from startPoint: CLLocationCoordinate2D, to endPoint: CLLocationCoordinate2D, resolution: CLLocationDistance) -> [CLLocationCoordinate2D] {
+    let fullDeltaLat = endPoint.latitude - startPoint.latitude
+    let fullDeltaLong = endPoint.longitude - startPoint.longitude
+    
+    let distance = startPoint.distance(to: endPoint)
+    let numPoints = ceil(distance / resolution) + 1 // add one for end point
+    
+    let points: [CLLocationCoordinate2D] =
+    (0..<Int(numPoints)).map { numPoint in
+        let ratio = Double(numPoint) / numPoints
+        let deltaLat = fullDeltaLat * ratio
+        let deltaLong = fullDeltaLong * ratio
+        return startPoint.offset(deltaLat: deltaLat, deltaLong: deltaLong)
+    }
+    return points
+}
 
-func mps(fromMPH mph: Double) -> Double { meters(fromFT: mph * 5280) / 3600 }
+public func meters(fromFT feet: Double) -> Double { feet * 0.304800609601 }
+
+public func mps(fromMPH mph: Double) -> Double { meters(fromFT: mph * 5280) / 3600 }

@@ -8,12 +8,12 @@
 import Foundation
 import CoreLocation
 
-class Road: Hashable {
-    static func == (lhs: Road, rhs: Road) -> Bool {
+public class Road: Hashable {
+    public static func == (lhs: Road, rhs: Road) -> Bool {
         lhs.name == rhs.name
     }
     
-    func hash(into hasher: inout Hasher) {
+    public func hash(into hasher: inout Hasher) {
         hasher.combine(name)
     }
     

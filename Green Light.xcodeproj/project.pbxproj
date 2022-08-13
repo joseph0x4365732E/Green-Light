@@ -9,6 +9,32 @@
 /* Begin PBXBuildFile section */
 		5215F2E1289F3FAC004DDDD5 /* RouteSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5215F2E0289F3FAC004DDDD5 /* RouteSlice.swift */; };
 		5215F2E328A059C5004DDDD5 /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5215F2E228A059C5004DDDD5 /* Signal.swift */; };
+		521D5C3528A6E5E900C25191 /* GreenLightUI.docc in Sources */ = {isa = PBXBuildFile; fileRef = 521D5C3428A6E5E900C25191 /* GreenLightUI.docc */; };
+		521D5C3B28A6E5E900C25191 /* GreenLightUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 521D5C3128A6E5E900C25191 /* GreenLightUI.framework */; };
+		521D5C4228A6E5E900C25191 /* GreenLightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521D5C4128A6E5E900C25191 /* GreenLightUITests.swift */; };
+		521D5C4328A6E5E900C25191 /* GreenLightUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 521D5C3328A6E5E900C25191 /* GreenLightUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		521D5C4628A6E5E900C25191 /* GreenLightUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 521D5C3128A6E5E900C25191 /* GreenLightUI.framework */; };
+		521D5C4728A6E5E900C25191 /* GreenLightUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 521D5C3128A6E5E900C25191 /* GreenLightUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		521D5C4F28A6E60000C25191 /* Green_LightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F8FAA2876544400D8D70B /* Green_LightApp.swift */; };
+		521D5C5028A6E60600C25191 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523EFFD42877C2E5003D72B4 /* MapView.swift */; };
+		521D5C5128A6E60600C25191 /* Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522EBD6A2899DE85002052E1 /* Light.swift */; };
+		521D5C5228A6E60600C25191 /* Simulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522EBD682898E248002052E1 /* Simulation.swift */; };
+		521D5C5328A6E60600C25191 /* CGExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BAA4E82891E87D00365730 /* CGExtension.swift */; };
+		521D5C5428A6E60600C25191 /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5215F2E228A059C5004DDDD5 /* Signal.swift */; };
+		521D5C5528A6E60600C25191 /* LightAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527384742882065500029D8B /* LightAnnotation.swift */; };
+		521D5C5628A6E60600C25191 /* RouteSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5215F2E0289F3FAC004DDDD5 /* RouteSlice.swift */; };
+		521D5C5728A6E60600C25191 /* HoughtonAndStine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BAA4EC289351BF00365730 /* HoughtonAndStine.swift */; };
+		521D5C5828A6E60600C25191 /* Road.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523B2D82289645B90008CCAC /* Road.swift */; };
+		521D5C5928A6E60600C25191 /* ColorPolyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527384722881DFAF00029D8B /* ColorPolyline.swift */; };
+		521D5C5A28A6E60600C25191 /* ImageOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5243DC9C2883321B00536BF2 /* ImageOverlay.swift */; };
+		521D5C5B28A6E60600C25191 /* Intersection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527384702880E4DB00029D8B /* Intersection.swift */; };
+		521D5C5C28A6E60600C25191 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BAA4EE2894587A00365730 /* Car.swift */; };
+		521D5C5D28A6E60600C25191 /* SimulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F8FAC2876544400D8D70B /* SimulationView.swift */; };
+		521D5C5E28A6E60600C25191 /* LightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BAA4EA2892519C00365730 /* LightView.swift */; };
+		521D5C5F28A6E60600C25191 /* CLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523EFFD628781187003D72B4 /* CLExtension.swift */; };
+		521D5C6028A6E60C00C25191 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 524F8FAE2876544500D8D70B /* Assets.xcassets */; };
+		521D5C6228A6EF3000C25191 /* SimulationPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521D5C6128A6EF3000C25191 /* SimulationPlayer.swift */; };
+		521D5C6328A6F33A00C25191 /* SimulationPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521D5C6128A6EF3000C25191 /* SimulationPlayer.swift */; };
 		522EBD692898E248002052E1 /* Simulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522EBD682898E248002052E1 /* Simulation.swift */; };
 		522EBD6B2899DE85002052E1 /* Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522EBD6A2899DE85002052E1 /* Light.swift */; };
 		523B2D83289645B90008CCAC /* Road.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523B2D82289645B90008CCAC /* Road.swift */; };
@@ -32,6 +58,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		521D5C3C28A6E5E900C25191 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 524F8F9F2876544400D8D70B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 521D5C3028A6E5E900C25191;
+			remoteInfo = GreenLightUI;
+		};
+		521D5C3E28A6E5E900C25191 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 524F8F9F2876544400D8D70B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 524F8FA62876544400D8D70B;
+			remoteInfo = "Green Light";
+		};
+		521D5C4428A6E5E900C25191 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 524F8F9F2876544400D8D70B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 521D5C3028A6E5E900C25191;
+			remoteInfo = GreenLightUI;
+		};
 		524F8FB82876544600D8D70B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 524F8F9F2876544400D8D70B /* Project object */;
@@ -48,9 +95,29 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		521D5C4828A6E5E900C25191 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				521D5C4728A6E5E900C25191 /* GreenLightUI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		5215F2E0289F3FAC004DDDD5 /* RouteSlice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteSlice.swift; sourceTree = "<group>"; };
 		5215F2E228A059C5004DDDD5 /* Signal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signal.swift; sourceTree = "<group>"; };
+		521D5C3128A6E5E900C25191 /* GreenLightUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GreenLightUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		521D5C3328A6E5E900C25191 /* GreenLightUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GreenLightUI.h; sourceTree = "<group>"; };
+		521D5C3428A6E5E900C25191 /* GreenLightUI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = GreenLightUI.docc; sourceTree = "<group>"; };
+		521D5C3A28A6E5E900C25191 /* GreenLightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreenLightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		521D5C4128A6E5E900C25191 /* GreenLightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenLightUITests.swift; sourceTree = "<group>"; };
+		521D5C6128A6EF3000C25191 /* SimulationPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationPlayer.swift; sourceTree = "<group>"; };
 		522EBD682898E248002052E1 /* Simulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simulation.swift; sourceTree = "<group>"; };
 		522EBD6A2899DE85002052E1 /* Light.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Light.swift; sourceTree = "<group>"; };
 		523B2D82289645B90008CCAC /* Road.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Road.swift; sourceTree = "<group>"; };
@@ -77,10 +144,26 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		521D5C2E28A6E5E900C25191 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		521D5C3728A6E5E900C25191 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				521D5C3B28A6E5E900C25191 /* GreenLightUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		524F8FA42876544400D8D70B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				521D5C4628A6E5E900C25191 /* GreenLightUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,12 +184,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		521D5C3228A6E5E900C25191 /* GreenLightUI */ = {
+			isa = PBXGroup;
+			children = (
+				521D5C3328A6E5E900C25191 /* GreenLightUI.h */,
+				521D5C3428A6E5E900C25191 /* GreenLightUI.docc */,
+			);
+			path = GreenLightUI;
+			sourceTree = "<group>";
+		};
+		521D5C4028A6E5E900C25191 /* GreenLightUITests */ = {
+			isa = PBXGroup;
+			children = (
+				521D5C4128A6E5E900C25191 /* GreenLightUITests.swift */,
+			);
+			path = GreenLightUITests;
+			sourceTree = "<group>";
+		};
 		524F8F9E2876544400D8D70B = {
 			isa = PBXGroup;
 			children = (
 				524F8FA92876544400D8D70B /* Green Light */,
 				524F8FBA2876544600D8D70B /* Green LightTests */,
 				524F8FC42876544600D8D70B /* Green LightUITests */,
+				521D5C3228A6E5E900C25191 /* GreenLightUI */,
+				521D5C4028A6E5E900C25191 /* GreenLightUITests */,
 				524F8FA82876544400D8D70B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -117,6 +219,8 @@
 				524F8FA72876544400D8D70B /* Green Light.app */,
 				524F8FB72876544600D8D70B /* Green LightTests.xctest */,
 				524F8FC12876544600D8D70B /* Green LightUITests.xctest */,
+				521D5C3128A6E5E900C25191 /* GreenLightUI.framework */,
+				521D5C3A28A6E5E900C25191 /* GreenLightUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,6 +238,7 @@
 				522EBD6A2899DE85002052E1 /* Light.swift */,
 				52BAA4EE2894587A00365730 /* Car.swift */,
 				522EBD682898E248002052E1 /* Simulation.swift */,
+				521D5C6128A6EF3000C25191 /* SimulationPlayer.swift */,
 				523EFFD42877C2E5003D72B4 /* MapView.swift */,
 				52BAA4EA2892519C00365730 /* LightView.swift */,
 				527384742882065500029D8B /* LightAnnotation.swift */,
@@ -174,7 +279,55 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		521D5C2C28A6E5E900C25191 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				521D5C4328A6E5E900C25191 /* GreenLightUI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		521D5C3028A6E5E900C25191 /* GreenLightUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 521D5C4D28A6E5E900C25191 /* Build configuration list for PBXNativeTarget "GreenLightUI" */;
+			buildPhases = (
+				521D5C2C28A6E5E900C25191 /* Headers */,
+				521D5C2D28A6E5E900C25191 /* Sources */,
+				521D5C2E28A6E5E900C25191 /* Frameworks */,
+				521D5C2F28A6E5E900C25191 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GreenLightUI;
+			productName = GreenLightUI;
+			productReference = 521D5C3128A6E5E900C25191 /* GreenLightUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		521D5C3928A6E5E900C25191 /* GreenLightUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 521D5C4E28A6E5E900C25191 /* Build configuration list for PBXNativeTarget "GreenLightUITests" */;
+			buildPhases = (
+				521D5C3628A6E5E900C25191 /* Sources */,
+				521D5C3728A6E5E900C25191 /* Frameworks */,
+				521D5C3828A6E5E900C25191 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				521D5C3D28A6E5E900C25191 /* PBXTargetDependency */,
+				521D5C3F28A6E5E900C25191 /* PBXTargetDependency */,
+			);
+			name = GreenLightUITests;
+			productName = GreenLightUITests;
+			productReference = 521D5C3A28A6E5E900C25191 /* GreenLightUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		524F8FA62876544400D8D70B /* Green Light */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 524F8FCB2876544600D8D70B /* Build configuration list for PBXNativeTarget "Green Light" */;
@@ -182,10 +335,12 @@
 				524F8FA32876544400D8D70B /* Sources */,
 				524F8FA42876544400D8D70B /* Frameworks */,
 				524F8FA52876544400D8D70B /* Resources */,
+				521D5C4828A6E5E900C25191 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				521D5C4528A6E5E900C25191 /* PBXTargetDependency */,
 			);
 			name = "Green Light";
 			productName = "Green Light";
@@ -235,9 +390,16 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1340;
+				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					521D5C3028A6E5E900C25191 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					521D5C3928A6E5E900C25191 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 524F8FA62876544400D8D70B;
+					};
 					524F8FA62876544400D8D70B = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -267,11 +429,28 @@
 				524F8FA62876544400D8D70B /* Green Light */,
 				524F8FB62876544600D8D70B /* Green LightTests */,
 				524F8FC02876544600D8D70B /* Green LightUITests */,
+				521D5C3028A6E5E900C25191 /* GreenLightUI */,
+				521D5C3928A6E5E900C25191 /* GreenLightUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		521D5C2F28A6E5E900C25191 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				521D5C6028A6E60C00C25191 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		521D5C3828A6E5E900C25191 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		524F8FA52876544400D8D70B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -298,6 +477,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		521D5C2D28A6E5E900C25191 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				521D5C4F28A6E60000C25191 /* Green_LightApp.swift in Sources */,
+				521D5C5928A6E60600C25191 /* ColorPolyline.swift in Sources */,
+				521D5C5C28A6E60600C25191 /* Car.swift in Sources */,
+				521D5C5428A6E60600C25191 /* Signal.swift in Sources */,
+				521D5C6328A6F33A00C25191 /* SimulationPlayer.swift in Sources */,
+				521D5C5F28A6E60600C25191 /* CLExtension.swift in Sources */,
+				521D5C5328A6E60600C25191 /* CGExtension.swift in Sources */,
+				521D5C5A28A6E60600C25191 /* ImageOverlay.swift in Sources */,
+				521D5C5528A6E60600C25191 /* LightAnnotation.swift in Sources */,
+				521D5C5028A6E60600C25191 /* MapView.swift in Sources */,
+				521D5C5828A6E60600C25191 /* Road.swift in Sources */,
+				521D5C5728A6E60600C25191 /* HoughtonAndStine.swift in Sources */,
+				521D5C5228A6E60600C25191 /* Simulation.swift in Sources */,
+				521D5C5E28A6E60600C25191 /* LightView.swift in Sources */,
+				521D5C5128A6E60600C25191 /* Light.swift in Sources */,
+				521D5C3528A6E5E900C25191 /* GreenLightUI.docc in Sources */,
+				521D5C5B28A6E60600C25191 /* Intersection.swift in Sources */,
+				521D5C5628A6E60600C25191 /* RouteSlice.swift in Sources */,
+				521D5C5D28A6E60600C25191 /* SimulationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		521D5C3628A6E5E900C25191 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				521D5C4228A6E5E900C25191 /* GreenLightUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		524F8FA32876544400D8D70B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -307,6 +520,7 @@
 				523EFFD728781187003D72B4 /* CLExtension.swift in Sources */,
 				52BAA4EF2894587A00365730 /* Car.swift in Sources */,
 				527384752882065500029D8B /* LightAnnotation.swift in Sources */,
+				521D5C6228A6EF3000C25191 /* SimulationPlayer.swift in Sources */,
 				5215F2E1289F3FAC004DDDD5 /* RouteSlice.swift in Sources */,
 				522EBD692898E248002052E1 /* Simulation.swift in Sources */,
 				523B2D83289645B90008CCAC /* Road.swift in Sources */,
@@ -342,6 +556,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		521D5C3D28A6E5E900C25191 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 521D5C3028A6E5E900C25191 /* GreenLightUI */;
+			targetProxy = 521D5C3C28A6E5E900C25191 /* PBXContainerItemProxy */;
+		};
+		521D5C3F28A6E5E900C25191 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 524F8FA62876544400D8D70B /* Green Light */;
+			targetProxy = 521D5C3E28A6E5E900C25191 /* PBXContainerItemProxy */;
+		};
+		521D5C4528A6E5E900C25191 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 521D5C3028A6E5E900C25191 /* GreenLightUI */;
+			targetProxy = 521D5C4428A6E5E900C25191 /* PBXContainerItemProxy */;
+		};
 		524F8FB92876544600D8D70B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 524F8FA62876544400D8D70B /* Green Light */;
@@ -355,6 +584,106 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		521D5C4928A6E5E900C25191 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2YJSMKRB25;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.josephcestone.GreenLightUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		521D5C4A28A6E5E900C25191 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2YJSMKRB25;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.josephcestone.GreenLightUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		521D5C4B28A6E5E900C25191 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2YJSMKRB25;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.josephcestone.GreenLightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Green Light.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Green Light";
+			};
+			name = Debug;
+		};
+		521D5C4C28A6E5E900C25191 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2YJSMKRB25;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.josephcestone.GreenLightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Green Light.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Green Light";
+			};
+			name = Release;
+		};
 		524F8FC92876544600D8D70B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -472,6 +801,7 @@
 		524F8FCC2876544600D8D70B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -501,6 +831,7 @@
 		524F8FCD2876544600D8D70B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -606,6 +937,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		521D5C4D28A6E5E900C25191 /* Build configuration list for PBXNativeTarget "GreenLightUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				521D5C4928A6E5E900C25191 /* Debug */,
+				521D5C4A28A6E5E900C25191 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		521D5C4E28A6E5E900C25191 /* Build configuration list for PBXNativeTarget "GreenLightUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				521D5C4B28A6E5E900C25191 /* Debug */,
+				521D5C4C28A6E5E900C25191 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		524F8FA22876544400D8D70B /* Build configuration list for PBXProject "Green Light" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
