@@ -140,11 +140,11 @@ public extension Array where Element == CLLocationCoordinate2D {
     }
 }
 
-public extension Array where Element == Double {
-    var cumulativeSum: [Double] {
-        var result = [Double]()
+public extension Array where Element: AdditiveArithmetic {
+    var cumulativeSum: [Element] {
+        var result = [Element]()
         result.reserveCapacity(count)
-        var runningSum = 0.0
+        var runningSum:Element = .zero
         for idx in 0..<count {
             runningSum += self[idx]
             result.append(runningSum)
@@ -152,7 +152,7 @@ public extension Array where Element == Double {
         return result
     }
     
-    func orderedBinarySearch(firstIndexWhere: (Double) -> Bool) -> Int {
+    func orderedBinarySearch(firstIndexWhere: (Element) -> Bool) -> Int {
         var highestFalseYet = -1
         var lowestTrueYet = count
         while true {

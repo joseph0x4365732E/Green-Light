@@ -62,6 +62,7 @@ public protocol SignalComputer {
     func nextSignal(after slice: TimeSlice) -> SignalState
 }
 
+/// Maximizes Acceleration by looking forward `Simulation.forwardLookingTime` seconds
 public class MaxFwdAccComputer: SignalComputer {
     var signal: Signal
     

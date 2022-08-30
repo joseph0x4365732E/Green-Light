@@ -48,6 +48,7 @@
 		524F8FBC2876544600D8D70B /* Green_LightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F8FBB2876544600D8D70B /* Green_LightTests.swift */; };
 		524F8FC62876544600D8D70B /* Green_LightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F8FC52876544600D8D70B /* Green_LightUITests.swift */; };
 		524F8FC82876544600D8D70B /* Green_LightUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F8FC72876544600D8D70B /* Green_LightUITestsLaunchTests.swift */; };
+		526A130328B57C9D000FBCDF /* SymbolicCalculus in Frameworks */ = {isa = PBXBuildFile; productRef = 526A130228B57C9D000FBCDF /* SymbolicCalculus */; };
 		527384712880E4DB00029D8B /* Intersection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527384702880E4DB00029D8B /* Intersection.swift */; };
 		527384732881DFAF00029D8B /* ColorPolyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527384722881DFAF00029D8B /* ColorPolyline.swift */; };
 		527384752882065500029D8B /* LightAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527384742882065500029D8B /* LightAnnotation.swift */; };
@@ -163,6 +164,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				526A130328B57C9D000FBCDF /* SymbolicCalculus in Frameworks */,
 				521D5C4628A6E5E900C25191 /* GreenLightKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +345,9 @@
 				521D5C4528A6E5E900C25191 /* PBXTargetDependency */,
 			);
 			name = GreenLight;
+			packageProductDependencies = (
+				526A130228B57C9D000FBCDF /* SymbolicCalculus */,
+			);
 			productName = "Green Light";
 			productReference = 524F8FA72876544400D8D70B /* GreenLight.app */;
 			productType = "com.apple.product-type.application";
@@ -422,6 +427,9 @@
 				Base,
 			);
 			mainGroup = 524F8F9E2876544400D8D70B;
+			packageReferences = (
+				526A130128B57C9D000FBCDF /* XCRemoteSwiftPackageReference "SymbolicCalculus" */,
+			);
 			productRefGroup = 524F8FA82876544400D8D70B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -806,7 +814,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Green Light/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"GreenLight/Preview Content\"";
 				DEVELOPMENT_TEAM = 2YJSMKRB25;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -992,6 +1000,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		526A130128B57C9D000FBCDF /* XCRemoteSwiftPackageReference "SymbolicCalculus" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/joseph0x4365732E/SymbolicCalculus";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		526A130228B57C9D000FBCDF /* SymbolicCalculus */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 526A130128B57C9D000FBCDF /* XCRemoteSwiftPackageReference "SymbolicCalculus" */;
+			productName = SymbolicCalculus;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 524F8F9F2876544400D8D70B /* Project object */;
 }
